@@ -27,11 +27,12 @@ export default {
                 <nav v-show="navOpen">
                 <div class="sidemenu__wrapper">
                     <ul class="sidemenu__list">
-                    <li class="sidemenu__item"><a href="">Top</a></li>
-                    <li class="sidemenu__item"><a href="">About</a></li>
-                    <li class="sidemenu__item"><a href="">Blog</a></li>
-                    <li class="sidemenu__item"><a href="">Work</a></li>
-                    <li class="sidemenu__item"><a href="">Link</a></li>
+                        <li class="sidemenu__item"><router-link to="/riverniviano/">Home</router-link></li>
+                        <li class="sidemenu__item"><router-link to="/riverniviano/contacts">Contacts</router-link></li>
+                        <li class="sidemenu__item"><router-link to="/riverniviano/classifica2015">Classifica 2015</router-link></li>
+                        <li class="sidemenu__item"><router-link to="/riverniviano/classifica2014">Classifica 2014</router-link></li>
+                        <li class="sidemenu__item"><router-link to="/riverniviano/classifica2013">Classifica 2013</router-link></li>
+                        <li class="sidemenu__item"><router-link to="/riverniviano/classifica2012">Classifica 2012</router-link></li>
                     </ul>
                 </div>
                 </nav>
