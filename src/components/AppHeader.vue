@@ -134,6 +134,7 @@ header {
                 list-style: none;
                 padding: 0;
                 margin: 0;
+                text-align: center;
             }
 
             &__item {
