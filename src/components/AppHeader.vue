@@ -45,7 +45,7 @@ export default {
 @use '../style/partials/variables' as *;
 
 header {
-    height: 100px;
+    height: 70px;
     background-color: $light_blue;
     display: flex;
     align-items: center;
@@ -64,7 +64,7 @@ header {
             width: 100vw;
             height: 100vh;
             // height: calc(100% - #{$headerHeight} - #{$footerHeight});
-            background: rgba(128, 128, 128, 0.5);
+            background: rgba(128, 128, 128);
             position: fixed;
             top: 0;
             right: 0;
