@@ -18,14 +18,14 @@ export default {
             <div class="logo"><img src="/vigolzone.png" alt=""></div>
         </div>
         <div class="row bg-yellow margin-top-1">
-            <div class="logo"><img src="gotico.png" alt=""></div>
+            <div class="logo"><img src="/gotico.png" alt=""></div>
             <div class="squad"><span>GOTICO</span></div>
             <div class="hour">
                 <p><strong>CAMPO 1</strong></p>
                 <p><strong>19:00</strong></p>
             </div>
             <div class="squad"><span>VIGOR CHERO</span></div>
-            <div class="logo"><img src="vigorchero.png" alt=""></div>
+            <div class="logo"><img src="/vigorchero.png" alt=""></div>
         </div>
         <div class="row bg-light-blue margin-top-1">
             <div class="logo"><img src="/Fc_RiverNiviano_Logo.png" alt=""></div>
@@ -38,14 +38,14 @@ export default {
             <div class="logo"><img src="/bobbiese.png" alt=""></div>
         </div>
         <div class="row bg-light-blue margin-top-1">
-            <div class="logo"> <img src="gotico.png" alt=""></div>
+            <div class="logo"> <img src="/gotico.png" alt=""></div>
             <div class="squad"><span>GOTICO</span></div>
             <div class="hour">
                 <p><strong>CAMPO 2</strong></p>
                 <p><strong>19:00</strong></p>
             </div>
             <div class="squad"><span>PODENZANO</span></div>
-            <div class="logo"><img src="podenzano.png" alt=""></div>
+            <div class="logo"><img src="/podenzano.png" alt=""></div>
         </div>
     </div>
 </template>

@@ -8,24 +8,24 @@ export default {
     <div class="margin-top-1">
         <div class="day"><h4>Venerdì 5 maggio 2023</h4></div>
         <div class="row bg-yellow">
-            <div class="logo"><img src="podenzano.png" alt=""></div>
+            <div class="logo"><img src="/podenzano.png" alt=""></div>
             <div class="squad"><span>PODENZANO</span></div>
             <div class="hour">
                 <p><strong>CAMPO 1</strong></p>
                 <p><strong>18:00</strong></p>
             </div>
             <div class="squad"><span>JUNIOR CALENDASCO</span></div>
-            <div class="logo"><img src="juniorcalendasco.png" alt=""></div>
+            <div class="logo"><img src="/juniorcalendasco.png" alt=""></div>
         </div>
         <div class="row bg-yellow margin-top-1">
-            <div class="logo"><img src="bobbiese.png" alt=""></div>
+            <div class="logo"><img src="/bobbiese.png" alt=""></div>
             <div class="squad"><span>BOBBIESE</span></div>
             <div class="hour">
                 <p><strong>CAMPO 1</strong></p>
                 <p><strong>19:00</strong></p>
             </div>
             <div class="squad"><span>AUDAX LIBERTAS</span></div>
-            <div class="logo"><img src="audaxlibertas.png" alt=""></div>
+            <div class="logo"><img src="/audaxlibertas.png" alt=""></div>
         </div>
         <div class="row bg-light-blue margin-top-1">
             <div class="logo"><img src="/Fc_RiverNiviano_Logo.png" alt=""></div>
@@ -35,17 +35,17 @@ export default {
                 <p><strong>18:00</strong></p>
             </div>
             <div class="squad"><span>JUNIOR CALENDASCO</span></div>
-            <div class="logo"><img src="juniorcalendasco.png" alt=""></div>
+            <div class="logo"><img src="/juniorcalendasco.png" alt=""></div>
         </div>
         <div class="row bg-light-blue margin-top-1">
-            <div class="logo"><img src="audaxlibertas.png" alt=""></div>
+            <div class="logo"><img src="/audaxlibertas.png" alt=""></div>
             <div class="squad"><span>AUDAX LIBERTAS</span></div>
             <div class="hour">
                 <p><strong>CAMPO 2</strong></p>
                 <p><strong>19:00</strong></p>
             </div>
             <div class="squad"><span>VIGOR CHER</span></div>
-            <div class="logo"><img src="vigorchero.png" alt=""></div>
+            <div class="logo"><img src="/vigorchero.png" alt=""></div>
         </div>
     </div>
 </template>
