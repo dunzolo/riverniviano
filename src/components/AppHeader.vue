@@ -3,20 +3,29 @@
 export default {
     data() {
         return {
-            navOpen: false
+            navOpen: false,
+            showNavbar: false
+        }
+    },
+    mounted() {
+        window.addEventListener('scroll', this.handleScroll);
+    },
+    unmounted() {
+        window.removeEventListener('scroll', this.handleScroll);
+    },
+    methods: {
+        handleScroll(event) {
+            window.pageYOffset > 0 ? this.showNavbar = true : this.showNavbar = false;
         }
     },
 }
 </script>
 
 <template lang="">
-    <header>
+    <header :class="showNavbar ? 'sticky' : ''">
         <div class="logo">
             <img src="/Fc_RiverNiviano_Logo.png" alt="logo">
         </div>
-        <!-- <div class="logo">
-            <img src="/Fc_RiverNiviano_Scritta.png" alt="scritta">
-        </div> -->
         <div id="sidemenu">
             <button class="sidemenu__btn" v-on:click="navOpen=!navOpen" v-bind:class="{active:navOpen}">
                 <span class="top"></span>
@@ -44,12 +53,23 @@ export default {
 <style lang="scss" scoped>
 @use '../style/partials/variables' as *;
 
+.sticky {
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 106, 255, 0.6);
+    // box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
 header {
     height: 70px;
-    background-color: $light_blue;
+    width: 100%;
+    // background-color: $light_blue;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+
 
     .logo {
         height: 100%;

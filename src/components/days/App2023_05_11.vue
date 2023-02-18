@@ -6,7 +6,7 @@ export default {
 
 <template lang="">
     <div class="margin-top-1">
-        <div class="day"><h4>Giovedì 4 maggio 2023</h4></div>
+        <div class="day"><h4>Venerdì 11 maggio 2023</h4></div>
         <div class="row bg-green">
             <div class="logo"><img src="juniorcalendasco.png" alt=""></div>
             <div class="squad"><span>JUNIOR CALENDASCO</span></div>
@@ -14,12 +14,12 @@ export default {
                 <p><strong>CAMPO 1</strong></p>
                 <p><strong>18:00</strong></p>
             </div>
-            <div class="squad"><span>GOTICO</span></div>
-            <div class="logo"><img src="gotico.png" alt=""></div>
+            <div class="squad"><span>GOSSOLENGO PITTOLO</span></div>
+            <div class="logo"><img src="gossolengopittolo.png" alt=""></div>
         </div>
         <div class="row bg-green margin-top-1">
-            <div class="logo"><img src="gossolengopittolo.png" alt=""></div>
-            <div class="squad"><span>GOSSOLENGO PITTOLO</span></div>
+            <div class="logo"><img src="gotico.png" alt=""></div>
+            <div class="squad"><span>GOTICO</span></div>
             <div class="hour">
                 <p><strong>CAMPO 1</strong></p>
                 <p><strong>19:00</strong></p>
@@ -34,12 +34,12 @@ export default {
                 <p><strong>CAMPO 2</strong></p>
                 <p><strong>18:00</strong></p>
             </div>
-            <div class="squad"><span>AUDAX LIBERTAS</span></div>
-            <div class="logo"><img src="audaxlibertas.png" alt=""></div>
+            <div class="squad"><span>JUNIOR CALENDASCO</span></div>
+            <div class="logo"><img src="juniorcalendasco.png" alt=""></div>
         </div>
         <div class="row bg-light-brown margin-top-1">
-            <div class="logo"><img src="juniorcalendasco.png" alt=""></div>
-            <div class="squad"><span>JUNIOR CALENDASCO</span></div>
+            <div class="logo"><img src="audaxlibertas.png" alt=""></div>
+            <div class="squad"><span>AUDAX LIBERTAS</span></div>
             <div class="hour">
                 <p><strong>CAMPO 2</strong></p>
                 <p><strong>19:00</strong></p>
