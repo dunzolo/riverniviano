@@ -20,7 +20,7 @@ export default {
         App2023_05_05,
         App2023_05_08,
         App2023_05_09,
-        App2023_05_11,
+        App2023_05_11
     }
 }
 </script>
