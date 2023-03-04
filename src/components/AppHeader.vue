@@ -24,7 +24,7 @@ export default {
 <template lang="">
     <header :class="showNavbar ? 'sticky' : ''">
         <div class="logo">
-            <img src="/Fc_RiverNiviano_Logo.png" alt="logo">
+            <img src="/riverniviano.png" alt="logo">
         </div>
         <div id="sidemenu">
             <button class="sidemenu__btn" v-on:click="navOpen=!navOpen" v-bind:class="{active:navOpen}">

@@ -1,27 +1,21 @@
 <script>
+import { store } from '../../store.js';
+
 import AppHeader from '../AppHeader.vue';
 import AppCategories from '../AppCategories.vue';
-import App2023_05_02 from '../days/App2023_05_02.vue';
-import App2023_05_03 from '../days/App2023_05_03.vue';
-import App2023_05_04 from '../days/App2023_05_04.vue';
-import App2023_05_05 from '../days/App2023_05_05.vue';
-import App2023_05_08 from '../days/App2023_05_08.vue';
-import App2023_05_09 from '../days/App2023_05_09.vue';
-import App2023_05_11 from '../days/App2023_05_11.vue';
-
+import AppMatch from '../AppMatch.vue';
 
 export default {
     components: {
         AppHeader,
         AppCategories,
-        App2023_05_02,
-        App2023_05_03,
-        App2023_05_04,
-        App2023_05_05,
-        App2023_05_08,
-        App2023_05_09,
-        App2023_05_11
-    }
+        AppMatch
+    },
+    data() {
+        return {
+            store
+        }
+    },
 }
 </script>
 
@@ -31,13 +25,7 @@ export default {
         <h1 class="title">TORNEO MICHELE PEZZA</h1>
         <AppCategories/>
         <div class="container">
-            <App2023_05_02/>
-            <App2023_05_03/>
-            <App2023_05_04/>
-            <App2023_05_05/>
-            <App2023_05_08/>
-            <App2023_05_09/>
-            <App2023_05_11/>
+            <AppMatch v-for="(item, index) in store.calendar" :key="index" :match="item" />
         </div>
     </div>
 </template>
