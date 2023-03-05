@@ -48,8 +48,7 @@ export default {
         },
         getImage(name_squad) {
             let name_path = name_squad.toLowerCase().replaceAll(" ", "");
-            return '/' + name_path + '.png';
-
+            return '/riverniviano/' + name_path + '.png';
         }
     }
 }
