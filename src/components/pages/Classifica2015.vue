@@ -2,22 +2,20 @@
 import { store } from '../../store.js';
 
 import AppHeader from '../AppHeader.vue';
+import AppGroups from '../AppGroups.vue';
+import AppMatch from '../AppMatch.vue';
 
 export default {
     components: {
-        AppHeader
+        AppHeader,
+        AppGroups,
+        AppMatch
     },
     data() {
         return {
             store
         }
     },
-    methods: {
-        getImage(name_squad) {
-            let name_path = name_squad.toLowerCase().replaceAll(" ", "");
-            return `/${name_path}.png`
-        }
-    }
 }
 </script>
 
@@ -29,57 +27,8 @@ export default {
             <div class="row" >
                 <div class="category bg-light-blue"><span>PRIMI CALCI 2015</span></div>
             </div>
-            <div class="row">
-                <div class="col-2"><span></span></div>
-                <div class="col-5"><span>NOME</span></div>
-                <div class="col-1"><span>GF</span></div>
-                <div class="col-1"><span>GS</span></div>
-                <div class="col-1"><span>PT</span></div>
-            </div>
-            <div class="row">
-                <div class="col-2">
-                    <div class="logo">
-                        <img :src="getImage('RIVERNIVIANO')" alt="">
-                    </div>
-                </div>
-                <div class="col-5"><span>RIVERNIVIANO</span></div>
-                <div class="col-1"><span>10</span></div>
-                <div class="col-1"><span>8</span></div>
-                <div class="col-1"><span>3</span></div>
-            </div>
-            <div class="row">
-                <div class="col-2">
-                    <div class="logo">
-                        <img :src="getImage('RIVERNIVIANO')" alt="">
-                    </div>
-                </div>
-                <div class="col-5"><span>RIVERNIVIANO</span></div>
-                <div class="col-1"><span>10</span></div>
-                <div class="col-1"><span>8</span></div>
-                <div class="col-1"><span>3</span></div>
-            </div>
-            <div class="row">
-                <div class="col-2">
-                    <div class="logo">
-                        <img :src="getImage('RIVERNIVIANO')" alt="">
-                    </div>
-                </div>
-                <div class="col-5"><span>RIVERNIVIANO</span></div>
-                <div class="col-1"><span>10</span></div>
-                <div class="col-1"><span>8</span></div>
-                <div class="col-1"><span>3</span></div>
-            </div>
-            <div class="row">
-                <div class="col-2">
-                    <div class="logo">
-                        <img :src="getImage('RIVERNIVIANO')" alt="">
-                    </div>
-                </div>
-                <div class="col-5"><span>RIVERNIVIANO</span></div>
-                <div class="col-1"><span>10</span></div>
-                <div class="col-1"><span>8</span></div>
-                <div class="col-1"><span>3</span></div>
-            </div>
+            <AppGroups v-for="(item, index) in store.primi_calci_2015" :key="index" :groups="item" :category="store.categoria_2015"/>
+            <AppMatch v-for="(item, index) in store.calendar_groups" :key="index" :match="item" :category="store.categoria_2015"/>
         </div>
     </div>
 </template>
@@ -105,13 +54,12 @@ p {
 
     .row {
         width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        text-align: center;
+        // display: flex;
+        // align-items: center;
+        // justify-content: space-around;
+        // flex-wrap: wrap;
+        // text-align: center;
         // border-radius: 100px;
-        background-color: white;
 
         .category {
             width: 100%;
@@ -119,45 +67,6 @@ p {
             align-items: center;
             justify-content: center;
             padding: 0.10rem 0;
-        }
-
-        .col-1 {
-            width: 10%;
-        }
-
-        .col-2 {
-            width: 20%;
-            display: flex;
-            justify-content: center;
-
-        }
-
-        .col-5 {
-            width: 50%;
-        }
-
-        .logo {
-            height: 50px;
-            width: 50px;
-            background-color: white;
-            // border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            img {
-                width: 100%;
-                scale: 1.5;
-            }
-        }
-
-        .squad {
-            width: calc((100% - 100px) / 3);
-            text-align: center;
-        }
-
-        .hour {
-            text-align: center;
         }
     }
 }

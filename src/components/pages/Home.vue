@@ -3,13 +3,13 @@ import { store } from '../../store.js';
 
 import AppHeader from '../AppHeader.vue';
 import AppCategories from '../AppCategories.vue';
-import AppMatch from '../AppMatch.vue';
+import AppCalendar from '../AppCalendar.vue';
 
 export default {
     components: {
         AppHeader,
         AppCategories,
-        AppMatch
+        AppCalendar
     },
     data() {
         return {
@@ -25,7 +25,7 @@ export default {
         <h1 class="title">TORNEO MICHELE PEZZA</h1>
         <AppCategories/>
         <div class="container">
-            <AppMatch v-for="(item, index) in store.calendar" :key="index" :match="item" />
+            <AppCalendar v-for="(item, index) in store.calendar" :key="index" :match="item" />
         </div>
     </div>
 </template>
