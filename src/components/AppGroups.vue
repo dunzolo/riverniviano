@@ -14,7 +14,7 @@ export default {
     methods: {
         getImage(name_squad) {
             let name_path = name_squad.toLowerCase().replaceAll(" ", "");
-            return `/${name_path}.png`
+            return '/' + name_path + '.png';
         },
         getBackgroundMatch(category) {
             switch (category) {
