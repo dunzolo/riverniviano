@@ -138,8 +138,8 @@ h4 {
         justify-content: center;
 
         img {
-            width: 100%;
-            scale: 1.5;
+            height: 100%;
+            // scale: 1.5;
         }
     }
 

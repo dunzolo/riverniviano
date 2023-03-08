@@ -8,9 +8,14 @@
 }
 
 body {
-    // background-color: #035AA8;
-    background-image: url('/public/background/abstract.jpg');
+    // background-color: rgb(116, 106, 106);
+    // background-color: #191818aa;
+    // background-image: url('/public/background/abstract.jpg');
+    background-image: url('pexels-elīna-arāja-3377405.jpg');
     background-size: cover;
+    // background-size: contain;
+
+
 }
 
 .bg-green {
@@ -22,7 +27,7 @@ body {
 }
 
 .bg-light-brown {
-    background-color: burlywood;
+    background-color: rgb(231, 129, 13);
 }
 
 .bg-light-blue {

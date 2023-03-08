@@ -1,8 +1,10 @@
 <script>
+import { store } from '../store.js'
 
 export default {
     data() {
         return {
+            store,
             navOpen: false,
             showNavbar: false
         }
@@ -55,7 +57,7 @@ export default {
 
 .sticky {
     backdrop-filter: blur(10px);
-    background-color: rgba(0, 106, 255, 0.6);
+    // background-color: rgba(0, 106, 255, 0.6);
     // box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -84,7 +86,10 @@ header {
             width: 100vw;
             height: 100vh;
             // height: calc(100% - #{$headerHeight} - #{$footerHeight});
-            background: rgba(128, 128, 128);
+            // background: rgba(128, 128, 128);
+            background-image: url('pexels-elīna-arāja-3377405.jpg');
+            background-size: cover;
+            // background-size: contain;
             position: fixed;
             top: 0;
             right: 0;

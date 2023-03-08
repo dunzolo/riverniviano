@@ -16,6 +16,14 @@ export default {
             store
         }
     },
+    created() {
+        this.handleScroll();
+    },
+    methods: {
+        handleScroll() {
+            window.scrollTo(0, 0);
+        }
+    },
 }
 </script>
 

@@ -1,7 +1,10 @@
 <script>
+import { store } from '../store.js'
+
 export default {
     data() {
         return {
+            store,
             showNavbar: false
         }
     },
@@ -21,7 +24,7 @@ export default {
 
 <template lang="">
     <div :class="showNavbar ? 'sticky' : ''">
-        <div class="container">
+    <div class="container">
             <div class="row" >
                 <div class="category bg-green">
                     <span>PULCINI 2012</span>
@@ -46,10 +49,10 @@ export default {
 <style lang="scss" scoped>
 .sticky {
     backdrop-filter: blur(10px);
-    background-color: rgba(0, 106, 255, 0.6);
+    // background-color: rgba(0, 106, 255, 0.6);
     padding-bottom: 1rem;
     position: sticky;
-    z-index: 1;
+    // z-index: 1;
     top: 70px;
     // box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.2);
 }
@@ -61,7 +64,7 @@ p {
 
 .container {
     width: 90%;
-    margin: 0 auto 1rem;
+    margin: 0 auto;
 }
 
 .row {
