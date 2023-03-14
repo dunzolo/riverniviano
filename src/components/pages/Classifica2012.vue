@@ -35,8 +35,8 @@ export default {
             <div class="row" >
                 <div class="category bg-green"><span>PULCINI 2012</span></div>
             </div>
-            <AppGroups v-for="(item, index) in store.pulcini_2012" :key="index" :groups="item" :category="store.categoria_2012"/>
-            <AppMatch v-for="(item, index) in store.calendar_groups" :key="index" :match="item" :category="store.categoria_2012"/>
+            <AppGroups v-for="(item, index) in store.pulcini_2012.items" :key="index" :groups="item" :category="store.pulcini_2012.categoria" :gironi="store.pulcini_2012.gironi" :elem="index"/>
+            <AppMatch v-for="(item, index) in store.calendar" :key="index" :match="item" :category="store.pulcini_2012.categoria"/>
         </div>
     </div>
 </template>

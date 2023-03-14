@@ -11,18 +11,6 @@ export default {
         }
     },
     methods: {
-        getCampo1() {
-            return store.campo_1;
-        },
-        getCampo2() {
-            return store.campo_2;
-        },
-        getOrario18() {
-            return store.orario_18_00;
-        },
-        getOrario19() {
-            return store.orario_19_00;
-        },
         getBackgroundMatch(category) {
             switch (category) {
                 case '2012':
@@ -60,8 +48,8 @@ export default {
             <div class="logo"><img :src="getImage(match.nome_squadra_1)" :alt="match.nome_squadra_1"></div>
             <div class="squad"><span>{{ match.nome_squadra_1 }}</span></div>
             <div class="hour">
-                <p><strong>{{ getCampo1() }}</strong></p>
-                <p><strong>{{ getOrario18() }}</strong></p>
+                <p><strong>{{ store.campo_1 }}</strong></p>
+                <p><strong>{{ store.orario_18_00 }}</strong></p>
             </div>
             <div class="squad"><span>{{ match.nome_squadra_2 }}</span></div>
             <div class="logo"><img :src="getImage(match.nome_squadra_2)" :alt="match.nome_squadra_2"></div>
@@ -70,8 +58,8 @@ export default {
             <div class="logo"><img :src="getImage(match.nome_squadra_3)" :alt="match.nome_squadra_3"></div>
             <div class="squad"><span>{{ match.nome_squadra_3 }}</span></div>
             <div class="hour">
-                <p><strong>{{ getCampo1() }}</strong></p>
-                <p><strong>{{ getOrario19() }}</strong></p>
+                <p><strong>{{ store.campo_1 }}</strong></p>
+                <p><strong>{{ store.orario_19_00 }}</strong></p>
             </div>
             <div class="squad"><span>{{ match.nome_squadra_4}}</span></div>
             <div class="logo"><img :src="getImage(match.nome_squadra_4)" :alt="match.nome_squadra_4"></div>
@@ -80,8 +68,8 @@ export default {
             <div class="logo"><img :src="getImage(match.nome_squadra_5)" :alt="match.nome_squadra_5"></div>
             <div class="squad"><span>{{ match.nome_squadra_5}}</span></div>
             <div class="hour">
-                <p><strong>{{ getCampo2() }}</strong></p>
-                <p><strong>{{ getOrario18() }}</strong></p>
+                <p><strong>{{ store.campo_2 }}</strong></p>
+                <p><strong>{{ store.orario_18_00 }}</strong></p>
             </div>
             <div class="squad"><span>{{ match.nome_squadra_6}}</span></div>
             <div class="logo"><img :src="getImage(match.nome_squadra_6)" :alt="match.nome_squadra_6"></div>
@@ -90,8 +78,8 @@ export default {
             <div class="logo"><img :src="getImage(match.nome_squadra_7)" :alt="match.nome_squadra_7"></div>
             <div class="squad"><span>{{ match.nome_squadra_7}}</span></div>
             <div class="hour">
-                <p><strong>{{ getCampo2() }}</strong></p>
-                <p><strong>{{ getOrario19() }}</strong></p>
+                <p><strong>{{ store.campo_2 }}</strong></p>
+                <p><strong>{{ store.orario_19_00 }}</strong></p>
             </div>
             <div class="squad"><span>{{ match.nome_squadra_8}}</span></div>
             <div class="logo"><img :src="getImage(match.nome_squadra_8)" :alt="match.nome_squadra_8"></div>

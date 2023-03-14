@@ -13,7 +13,21 @@ export default {
     },
     data() {
         return {
-            store
+            store,
+        }
+    },
+    created() {
+        this.handleScroll();
+    },
+    methods: {
+        handleScroll() {
+            window.scrollTo(0, 0);
+        },
+        sortArrays(arrays) {
+            console.log(arrays);
+            arrays = arrays.sort((a, b) => a.punti - b.punti);
+            console.log(arrays);
+            return arrays;
         }
     },
 }
@@ -27,8 +41,8 @@ export default {
             <div class="row" >
                 <div class="category bg-light-blue"><span>PRIMI CALCI 2015</span></div>
             </div>
-            <AppGroups v-for="(item, index) in store.primi_calci_2015" :key="index" :groups="item" :category="store.categoria_2015"/>
-            <AppMatch v-for="(item, index) in store.calendar_groups" :key="index" :match="item" :category="store.categoria_2015"/>
+            <AppGroups v-for="(item, index) in store.primi_calci_2015.items" :key="index" :groups="item" :category="store.primi_calci_2015.categoria" :gironi="store.primi_calci_2015.gironi" :elem="index"/>
+            <AppMatch v-for="(item, index) in store.calendar" :key="index" :match="item" :category="store.primi_calci_2015.categoria"/>
         </div>
     </div>
 </template>

@@ -4,11 +4,13 @@ import { store } from '../store.js';
 export default {
     props: {
         groups: Object,
-        category: String
+        gironi: Array,
+        category: String,
+        elem: Number
     },
     data() {
         return {
-            store
+            store,
         }
     },
     methods: {
@@ -38,6 +40,13 @@ export default {
             }
             return category
         },
+        sortArrays(arrays) {
+            return arrays.sort((a, b) => {
+                if (b.punti < a.punti) return -1;
+                if (b.punti > a.punti) return 1;
+                return 0;
+            });
+        }
     }
 }
 </script>
@@ -45,7 +54,7 @@ export default {
 <template lang="">
     <div class="row margin-top-1">
         <div class="w-100" :class="getBackgroundMatch(category)">
-            <p>GIRONE {{groups.girone}}</p>
+            <p>GIRONE {{ gironi[elem] }}</p>
         </div>
     </div>
     <div class="row">
@@ -55,51 +64,17 @@ export default {
         <div class="col-1"><span><strong>GS</strong></span></div>
         <div class="col-1"><span><strong>PT</strong></span></div>
     </div>
-    <div class="row">
+    <div class="row" v-for="(item, index) in sortArrays(groups)" :key="index">
         <div class="col-2">
             <div class="logo">
-                <img :src="getImage(groups.nome_squadra_1)" alt="">
+                <img :src="getImage(item.nome_squadra)" alt="">
             </div>
         </div>
-        <div class="col-5"><span>{{groups.nome_squadra_1}}</span></div>
-        <div class="col-1"><span>0</span></div>
-        <div class="col-1"><span>0</span></div>
-        <div class="col-1"><span>0</span></div>
+        <div class="col-5"><span>{{ item.nome_squadra }}</span></div>
+        <div class="col-1"><span>{{ item.goal_fatti}}</span></div>
+        <div class="col-1"><span>{{ item.goal_subiti}}</span></div>
+        <div class="col-1"><span>{{ item.punti}}</span></div>
     </div>
-    <div class="row">
-        <div class="col-2">
-            <div class="logo">
-                <img :src="getImage(groups.nome_squadra_2)" alt="">
-            </div>
-        </div>
-        <div class="col-5"><span>{{groups.nome_squadra_2}}</span></div>
-        <div class="col-1"><span>0</span></div>
-        <div class="col-1"><span>0</span></div>
-        <div class="col-1"><span>0</span></div>
-    </div>
-    <div class="row">
-        <div class="col-2">
-            <div class="logo">
-                <img :src="getImage(groups.nome_squadra_3)" alt="">
-            </div>
-        </div>
-        <div class="col-5"><span>{{groups.nome_squadra_3}}</span></div>
-        <div class="col-1"><span>0</span></div>
-        <div class="col-1"><span>0</span></div>
-        <div class="col-1"><span>0</span></div>
-    </div>
-    <div class="row">
-        <div class="col-2">
-            <div class="logo">
-                <img :src="getImage(groups.nome_squadra_4)" alt="">
-            </div>
-        </div>
-        <div class="col-5"><span>{{groups.nome_squadra_4}}</span></div>
-        <div class="col-1"><span>0</span></div>
-        <div class="col-1"><span>0</span></div>
-        <div class="col-1"><span>0</span></div>
-    </div>
-    
 </template>
 
 <style lang="scss" scoped>

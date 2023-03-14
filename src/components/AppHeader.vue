@@ -30,9 +30,9 @@ export default {
         </div>
         <div id="sidemenu">
             <button class="sidemenu__btn" v-on:click="navOpen=!navOpen" v-bind:class="{active:navOpen}">
-                <span class="top"></span>
-                <span class="mid"></span>
-                <span class="bottom"></span>
+                <span class="top" :class="showNavbar ? 'color-black' : ''"></span>
+                <span class="mid" :class="showNavbar ? 'color-black' : ''"></span>
+                <span class="bottom" :class="showNavbar ? 'color-black' : ''"></span>
             </button>
             <transition name="translateX">
                 <nav v-show="navOpen">
@@ -57,6 +57,8 @@ export default {
 
 .sticky {
     backdrop-filter: blur(10px);
+    transition: all .4s ease;
+
     // background-color: rgba(0, 106, 255, 0.6);
     // box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.2);
 }
@@ -87,7 +89,9 @@ header {
             height: 100vh;
             // height: calc(100% - #{$headerHeight} - #{$footerHeight});
             // background: rgba(128, 128, 128);
-            background-image: url('pexels-elīna-arāja-3377405.jpg');
+
+            background-image: url('/public/pexels-elīna-arāja-3377405.jpg'); //cambiato path
+            backdrop-filter: blur(10px);
             background-size: cover;
             // background-size: contain;
             position: fixed;
@@ -100,6 +104,7 @@ header {
             justify-content: center;
             // box-shadow: 2px 0 3px$grey-6;
             // overflow-y: scroll;
+
         }
 
         .sidemenu {
@@ -118,7 +123,7 @@ header {
                 span {
                     display: block;
                     width: 20px;
-                    height: 2px;
+                    height: 3px;
                     margin: auto;
                     background: white;
                     position: absolute;
@@ -134,6 +139,12 @@ header {
 
                     &.bottom {
                         transform: translateY(8px);
+                    }
+
+                    &.color-black {
+                        transition: all 1s ease;
+
+                        background-color: black;
                     }
                 }
 
@@ -169,10 +180,15 @@ header {
                     font-size: 1.6em;
                     padding: .5em;
                     display: block;
-                    color: $light_blue;
+                    color: white;
                     transition: .4s ease;
 
                     &:hover {
+                        background: lightgrey;
+                        color: dimgrey;
+                    }
+
+                    &:active {
                         background: lightgrey;
                         color: dimgrey;
                     }
@@ -189,7 +205,7 @@ header {
     .translateX-enter-active,
     .translateX-leave-active {
         transform-origin: top left 0;
-        transition: .2s ease;
+        transition: .4s ease;
     }
 
     .translateX-leave-to {

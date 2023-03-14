@@ -17,6 +17,16 @@ export default {
         }
     },
     created() {
+        this.handleScroll();
+    },
+    methods: {
+        handleScroll() {
+            window.scrollTo(0, 0);
+        },
+        startFrom(array, index) {
+            //In base all'indice, ritorna array filtrato
+            return array.slice(index);
+        }
 
     },
 }
@@ -28,7 +38,7 @@ export default {
         <h1 class="title">TORNEO MICHELE PEZZA</h1>
         <AppCategories/>
         <div class="container">
-            <AppCalendar v-for="(item, index) in store.calendar" :key="index" :match="item" />
+            <AppCalendar v-for="(item, index) in this.startFrom(store.calendar, 0) " :key="index" :match="item" /> //TODO INCREMENTARE
         </div>
     </div>
 </template>

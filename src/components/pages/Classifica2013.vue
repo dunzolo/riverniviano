@@ -16,6 +16,14 @@ export default {
             store
         }
     },
+    created() {
+        this.handleScroll();
+    },
+    methods: {
+        handleScroll() {
+            window.scrollTo(0, 0);
+        }
+    },
 }
 </script>
 
@@ -27,8 +35,8 @@ export default {
             <div class="row" >
                 <div class="category bg-yellow"><span>PULCINI 2013</span></div>
             </div>
-            <AppGroups v-for="(item, index) in store.pulcini_2013" :key="index" :groups="item" :category="store.categoria_2013"/>
-            <AppMatch v-for="(item, index) in store.calendar_groups" :key="index" :match="item" :category="store.categoria_2013"/>
+            <AppGroups v-for="(item, index) in store.pulcini_2013.items" :key="index" :groups="item" :category="store.pulcini_2013.categoria" :gironi="store.pulcini_2013.gironi" :elem="index"/>
+            <AppMatch v-for="(item, index) in store.calendar" :key="index" :match="item" :category="store.pulcini_2013.categoria"/>
         </div>
     </div>
 </template>

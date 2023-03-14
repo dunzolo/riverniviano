@@ -16,6 +16,14 @@ export default {
             store
         }
     },
+    created() {
+        this.handleScroll();
+    },
+    methods: {
+        handleScroll() {
+            window.scrollTo(0, 0);
+        }
+    },
 }
 </script>
 
@@ -27,8 +35,8 @@ export default {
             <div class="row" >
                 <div class="category bg-light-brown"><span>PRIMI CALCI 2014</span></div>
             </div>
-            <AppGroups v-for="(item, index) in store.primi_calci_2014" :key="index" :groups="item" :category="store.categoria_2014"/>
-            <AppMatch v-for="(item, index) in store.calendar_groups" :key="index" :match="item" :category="store.categoria_2014"/>
+            <AppGroups v-for="(item, index) in store.primi_calci_2014.items" :key="index" :groups="item" :category="store.primi_calci_2014.categoria" :gironi="store.primi_calci_2014.gironi"/>
+            <AppMatch v-for="(item, index) in store.calendar" :key="index" :match="item" :category="store.primi_calci_2014.categoria"/>
         </div>
     </div>
 </template>
