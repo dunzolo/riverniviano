@@ -62,10 +62,10 @@ p {
     font-size: 12px;
 }
 
-.container {
-    width: 90%;
-    margin: 0 auto;
-}
+// .container {
+//     width: 90%;
+//     margin: 0 auto;
+// }
 
 .row {
     width: 100%;

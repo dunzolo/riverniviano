@@ -4,7 +4,8 @@ import { store } from '../store.js'
 export default {
     props: {
         match: Object,
-        category: String
+        category: String,
+        elem: Number
     },
     data() {
         return {
@@ -12,18 +13,6 @@ export default {
         }
     },
     methods: {
-        getCampo1() {
-            return store.campo_1;
-        },
-        getCampo2() {
-            return store.campo_2;
-        },
-        getOrario18() {
-            return store.orario_18_00;
-        },
-        getOrario19() {
-            return store.orario_19_00;
-        },
         getBackgroundMatch(category) {
             switch (category) {
                 case '2012':
@@ -49,6 +38,17 @@ export default {
         getImage(name_squad) {
             let name_path = name_squad.toLowerCase().replaceAll(" ", "");
             return '/riverniviano/' + name_path + '.png';
+        },
+        printDay(){
+            if(this.elem == 0)
+                return true
+            else{
+                const found_cat = this.match.match.some(item => item.categoria === this.category);
+                const found_gir = this.match.match.some(item => item.girone === this.elem);
+
+                if(found_cat === found_gir)
+                    return true;
+            }
         }
     }
 }
@@ -56,47 +56,27 @@ export default {
 
 <template lang="">
     <div class="margin-top-1">
-        <div class="day" v-if="match.categoria_partita_1 === category || match.categoria_partita_2 === category || match.categoria_partita_3 === category || match.categoria_partita_4 === category">
+        <div class="day" v-if="printDay()">
             <h4>{{ match.giorno }}</h4>
         </div>
-        <div v-if="match.categoria_partita_1 === category">
-            <div class="row margin-bottom-1" :class=getBackgroundMatch(match.categoria_partita_1) >
-                <div class="logo"><img :src="getImage(match.nome_squadra_1)" :alt="match.nome_squadra_1"></div>
-                <div class="hour"><p><strong>{{ getCampo1() }} - {{ getOrario18() }}</strong></p></div>
-                <div class="squad"><span>{{ match.nome_squadra_1 }}</span></div>
-                <div class="results">{{ match.risultato_squadra_1 }} - {{ match.risultato_squadra_2 }}</div>
-                <div class="squad"><span>{{ match.nome_squadra_2 }}</span></div>
-                <div class="logo"><img :src="getImage(match.nome_squadra_2)" :alt="match.nome_squadra_2"></div>
-            </div>
-        </div>
-        <div v-if="match.categoria_partita_2 === category">
-            <div class="row margin-bottom-1" :class=getBackgroundMatch(match.categoria_partita_2) >
-                <div class="logo"><img :src="getImage(match.nome_squadra_3)" :alt="match.nome_squadra_3"></div>
-                <div class="hour"><p><strong>{{ getCampo1() }} - {{ getOrario19() }}</strong></p></div>
-                <div class="squad"><span>{{ match.nome_squadra_3 }}</span></div>
-                <div class="results">{{ match.risultato_squadra_3 }} - {{ match.risultato_squadra_4 }}</div>
-                <div class="squad"><span>{{ match.nome_squadra_4 }}</span></div>
-                <div class="logo"><img :src="getImage(match.nome_squadra_4)" :alt="match.nome_squadra_4"></div>
-            </div>
-        </div>
-        <div v-if="match.categoria_partita_3 === category">
-            <div class="row margin-bottom-1" :class=getBackgroundMatch(match.categoria_partita_3) >
-                <div class="logo"><img :src="getImage(match.nome_squadra_5)" :alt="match.nome_squadra_5"></div>
-                <div class="hour"><p><strong>{{ getCampo2() }} - {{ getOrario18() }}</strong></p></div>
-                <div class="squad"><span>{{ match.nome_squadra_5 }}</span></div>
-                <div class="results">{{ match.risultato_squadra_5 }} - {{ match.risultato_squadra_6 }}</div>
-                <div class="squad"><span>{{ match.nome_squadra_6 }}</span></div>
-                <div class="logo"><img :src="getImage(match.nome_squadra_6)" :alt="match.nome_squadra_6"></div>
-            </div>
-        </div>
-        <div v-if="match.categoria_partita_4 === category">
-            <div class="row margin-bottom-1" :class=getBackgroundMatch(match.categoria_partita_4) >
-                <div class="logo"><img :src="getImage(match.nome_squadra_7)" :alt="match.nome_squadra_7"></div>
-                <div class="hour"><p><strong>{{ getCampo2() }} - {{ getOrario19() }}</strong></p></div>
-                <div class="squad"><span>{{ match.nome_squadra_7 }}</span></div>
-                <div class="results">{{ match.risultato_squadra_7 }} - {{ match.risultato_squadra_8 }}</div>
-                <div class="squad"><span>{{ match.nome_squadra_8 }}</span></div>
-                <div class="logo"><img :src="getImage(match.nome_squadra_8)" :alt="match.nome_squadra_8"></div>
+        <div v-for="(item, index) in match.match" :key="index">
+            <div v-if="item.categoria === category">
+                <div v-if="item.girone == elem" class="row margin-bottom-1" :class=getBackgroundMatch(item.categoria)>
+                    <div class="logo"><img :src="getImage(item.nome_squadra_casa)" :alt="item.nome_squadra_casa"></div>
+                    <div class="hour"><p><strong>{{ item.campo }} - {{ item.orario }}</strong></p></div>
+                    <div class="squad"><span>{{ item.nome_squadra_casa }}</span></div>
+                    <div class="results">{{ item.risultato_squadra_casa }} - {{ item.risultato_squadra_ospite }}</div>
+                    <div class="squad"><span>{{ item.nome_squadra_ospite }}</span></div>
+                    <div class="logo"><img :src="getImage(item.nome_squadra_ospite)" :alt="item.nome_squadra_ospite"></div>
+                </div>
+                <div v-if="elem == 0" class="row margin-bottom-1" :class=getBackgroundMatch(item.categoria)>
+                    <div class="logo"><img :src="getImage(item.nome_squadra_casa)" :alt="item.nome_squadra_casa"></div>
+                    <div class="hour"><p><strong>{{ item.campo }} - {{ item.orario }}</strong></p></div>
+                    <div class="squad"><span>{{ item.nome_squadra_casa }}</span></div>
+                    <div class="results">{{ item.risultato_squadra_casa }} - {{ item.risultato_squadra_ospite }}</div>
+                    <div class="squad"><span>{{ item.nome_squadra_ospite }}</span></div>
+                    <div class="logo"><img :src="getImage(item.nome_squadra_ospite)" :alt="item.nome_squadra_ospite"></div>
+                </div>
             </div>
         </div>
     </div>
@@ -153,6 +133,17 @@ h4 {
         width: 100%;
         position: absolute;
         top: 0;
+    }
+}
+
+@media screen and (min-width: 576px) {
+
+    .full-container{
+        display: flex;
+        justify-content: space-between;
+        .container{
+            width: 49%;
+        }
     }
 }
 </style>

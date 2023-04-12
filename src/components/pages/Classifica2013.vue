@@ -1,5 +1,6 @@
 <script>
 import { store } from '../../store.js';
+import pulcini_2013 from '../../datasets/pulcini_2013.json'
 
 import AppHeader from '../AppHeader.vue';
 import AppGroups from '../AppGroups.vue';
@@ -13,17 +14,28 @@ export default {
     },
     data() {
         return {
-            store
+            store,
+            items: pulcini_2013,
+            window:{
+                width: 0,
+                height: 0
+            }
         }
     },
     created() {
         this.handleScroll();
+        window.addEventListener('resize', this.handleResize);
+        this.handleResize();
     },
     methods: {
         handleScroll() {
             window.scrollTo(0, 0);
-        }
-    },
+        },
+        handleResize() {
+            this.window.width = window.innerWidth;
+            this.window.height = window.innerHeight;
+        },
+    }
 }
 </script>
 
@@ -35,8 +47,20 @@ export default {
             <div class="row" >
                 <div class="category bg-yellow"><span>PULCINI 2013</span></div>
             </div>
-            <AppGroups v-for="(item, index) in store.pulcini_2013.items" :key="index" :groups="item" :category="store.pulcini_2013.categoria" :gironi="store.pulcini_2013.gironi" :elem="index"/>
-            <AppMatch v-for="(item, index) in store.calendar" :key="index" :match="item" :category="store.pulcini_2013.categoria"/>
+            <div class="container-groups">
+                <AppGroups v-for="(item, index) in items.classifica" :key="index" :groups="item" :category="items.categoria" :gironi="items.gironi" :elem="index"/>
+            </div>
+            <div class="container-matches" v-if="this.window.width < 576">
+                <AppMatch v-for="(item, index) in store.calendario" :key="index" :match="item" :category="items.categoria" :elem="0"/>
+            </div>
+            <div class="container-matches" v-if="this.window.width >= 576">
+                <div class="container-matches-first">
+                    <AppMatch v-for="(item, index) in store.calendario" :key="index" :match="item" :category="items.categoria" :elem="1"/>
+                </div>
+                <div class="container-matches-second">
+                    <AppMatch v-for="(item, index) in store.calendario" :key="index" :match="item" :category="items.categoria" :elem="2"/>
+                </div>
+            </div>
         </div>
     </div>
 </template>

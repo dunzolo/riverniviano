@@ -57,7 +57,7 @@ export default {
 
 .sticky {
     backdrop-filter: blur(10px);
-    transition: all .4s ease;
+    // transition: all .4s ease;
 
     // background-color: rgba(0, 106, 255, 0.6);
     // box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.2);

@@ -3,13 +3,13 @@ import { store } from '../../store.js';
 
 import AppHeader from '../AppHeader.vue';
 import AppCategories from '../AppCategories.vue';
-import AppCalendar from '../AppCalendar.vue';
+import AppCalendario from '../AppCalendario.vue';
 
 export default {
     components: {
         AppHeader,
         AppCategories,
-        AppCalendar
+        AppCalendario,
     },
     data() {
         return {
@@ -36,9 +36,10 @@ export default {
     <div>
         <AppHeader/>
         <h1 class="title">TORNEO MICHELE PEZZA</h1>
-        <AppCategories/>
         <div class="container">
-            <AppCalendar v-for="(item, index) in this.startFrom(store.calendar, 0) " :key="index" :match="item" /> //TODO INCREMENTARE
+            <AppCategories/>
+            <!-- all'interno del startFrom indico l'indice da cui partire a ciclare l'array di oggetti -->
+            <AppCalendario v-for="(item, index) in this.startFrom(store.calendario, 0) " :key="index" :match="item"/>
         </div>
     </div>
 </template>
@@ -55,7 +56,10 @@ export default {
 
 .container {
     width: 90%;
+    max-width: 991px;
     margin: 0 auto;
     padding-bottom: 1rem;
 }
+
+
 </style>

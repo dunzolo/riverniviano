@@ -45,3 +45,19 @@ body {
 .margin-bottom-1 {
     margin-bottom: 1rem;
 }
+
+@media screen and (min-width: 576px) {
+    .container-groups{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .container-matches{
+        display: flex;
+        justify-content: space-between;
+
+        .container-matches-first, .container-matches-second{
+            width: 49%;
+        }
+    }
+}

@@ -52,28 +52,30 @@ export default {
 </script>
 
 <template lang="">
-    <div class="row margin-top-1">
-        <div class="w-100" :class="getBackgroundMatch(category)">
-            <p>GIRONE {{ gironi[elem] }}</p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-2"><span></span></div>
-        <div class="col-5"><span><strong>NOME</strong></span></div>
-        <div class="col-1"><span><strong>GF</strong></span></div>
-        <div class="col-1"><span><strong>GS</strong></span></div>
-        <div class="col-1"><span><strong>PT</strong></span></div>
-    </div>
-    <div class="row" v-for="(item, index) in sortArrays(groups)" :key="index">
-        <div class="col-2">
-            <div class="logo">
-                <img :src="getImage(item.nome_squadra)" alt="">
+    <div class="classifica">
+        <div class="row margin-top-1">
+            <div class="w-100" :class="getBackgroundMatch(category)">
+                <p>GIRONE {{ gironi[elem] }}</p>
             </div>
         </div>
-        <div class="col-5"><span>{{ item.nome_squadra }}</span></div>
-        <div class="col-1"><span>{{ item.goal_fatti}}</span></div>
-        <div class="col-1"><span>{{ item.goal_subiti}}</span></div>
-        <div class="col-1"><span>{{ item.punti}}</span></div>
+        <div class="row">
+            <div class="col-2"><span></span></div>
+            <div class="col-5"><span><strong>NOME</strong></span></div>
+            <div class="col-1"><span><strong>GF</strong></span></div>
+            <div class="col-1"><span><strong>GS</strong></span></div>
+            <div class="col-1"><span><strong>PT</strong></span></div>
+        </div>
+        <div class="row" v-for="(item, index) in sortArrays(groups)" :key="index">
+            <div class="col-2">
+                <div class="logo">
+                    <img :src="getImage(item.nome_squadra)" alt="">
+                </div>
+            </div>
+            <div class="col-5"><span>{{ item.nome_squadra }}</span></div>
+            <div class="col-1"><span>{{ item.goal_fatti}}</span></div>
+            <div class="col-1"><span>{{ item.goal_subiti}}</span></div>
+            <div class="col-1"><span>{{ item.punti}}</span></div>
+        </div>
     </div>
 </template>
 
@@ -138,6 +140,12 @@ p {
 
     .hour {
         text-align: center;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .classifica{
+        width: 49%;
     }
 }
 </style>
