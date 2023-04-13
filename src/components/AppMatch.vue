@@ -9,7 +9,10 @@ export default {
     },
     data() {
         return {
-            store
+            store,
+            found_cat: false,
+            found_gir: false,
+
         }
     },
     methods: {
@@ -40,14 +43,16 @@ export default {
             return '/riverniviano/' + name_path + '.png';
         },
         printDay(){
-            if(this.elem == 0)
+            if(this.elem == 0 && this.match.match.some(item => item.categoria == this.category))
                 return true
             else{
-                const found_cat = this.match.match.some(item => item.categoria === this.category);
-                const found_gir = this.match.match.some(item => item.girone === this.elem);
-
-                if(found_cat === found_gir)
-                    return true;
+                
+                return this.match.match.some((item) => {
+                    if(item.categoria == this.category){
+                        if(item.girone === this.elem)
+                            return true
+                    }
+                });
             }
         }
     }
