@@ -614,5 +614,56 @@ export const store = reactive({
                 }
             ]
         },
+        //'Giovedì 18 maggio 2023'
+        {
+            giorno: 'Giovedì 18 maggio 2023',
+
+            match: [
+                // squadre che giocano alle 18:00
+                {
+                    categoria: 'Esordienti',
+                    campo: "CAMPO 1",
+                    orario: "18:00",
+                    girone: 2,
+                    nome_squadra_casa: 'PODENZANO',
+                    risultato_squadra_casa: null,
+                    nome_squadra_ospite: 'AUDAX LIBERTAS',
+                    risultato_squadra_ospite: null,
+                },
+                // squadre che giocano alle 18:20
+                {
+                    categoria: 'Esordienti',
+                    campo: "CAMPO 2",
+                    orario: "18:20",
+                    girone: 2,
+                    nome_squadra_casa: 'RIVERNIVIANO BLU',
+                    risultato_squadra_casa: null,
+                    nome_squadra_ospite: 'VIGOR CHERO',
+                    risultato_squadra_ospite: null,
+                },
+                // squadre che giocano alle 19:00
+                {
+                    categoria: 'Esordienti',
+                    campo: "CAMPO 1",
+                    orario: "19:00",
+                    girone: 2,
+                    nome_squadra_casa: 'JUNIOR CALENDASCO',
+                    risultato_squadra_casa: null,
+                    nome_squadra_ospite: 'BOBBIESE',
+                    risultato_squadra_ospite: null,
+                },
+                // squadre che giocano alle 19:20
+                {
+                    categoria: 'Esordienti',
+                    campo: "CAMPO 2",
+                    orario: "19:20",
+                    girone: 2,
+                    nome_squadra_casa: 'JUNIOR CALENDASCO',
+                    risultato_squadra_casa: null,
+                    nome_squadra_ospite: 'AUDAX LIBERTAS',
+                    risultato_squadra_ospite: null,
+                }
+            ]
+        },
     ],
 })

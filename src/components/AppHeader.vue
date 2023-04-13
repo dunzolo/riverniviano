@@ -90,7 +90,9 @@ header {
             // height: calc(100% - #{$headerHeight} - #{$footerHeight});
             // background: rgba(128, 128, 128);
 
-            background-image: url('/public/pexels-elīna-arāja-3377405.jpg'); //cambiato path
+            // background-image: url('/public/pexels-elīna-arāja-3377405.jpg'); //cambiato path
+            background-image: url('/public/background/TECHSTORE.jpg'); //cambiato path
+
             backdrop-filter: blur(10px);
             background-size: cover;
             // background-size: contain;
