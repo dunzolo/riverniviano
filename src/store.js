@@ -1,6 +1,8 @@
 import { reactive } from 'vue';
 
 export const store = reactive({
+    //LOADING HOME PAGE
+    is_loading: true,
 
     //CATEGORIE
     categoria_esordienti: 'Esordienti',
