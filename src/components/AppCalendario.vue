@@ -66,7 +66,7 @@ export default {
 <style lang="scss" scoped>
 span,
 p {
-    font-size: 12px;
+    font-size: 2vmin;
 }
 
 h4 {
@@ -83,13 +83,13 @@ h4 {
 .row {
     width: 100%;
     border-radius: 100px;
-    
-    .col{
+
+    .col {
         display: flex;
         align-items: center;
         justify-content: space-between;
         // flex-wrap: wrap;
-        
+
         .logo {
             height: 50px;
             width: 50px;
@@ -98,18 +98,18 @@ h4 {
             display: flex;
             align-items: center;
             justify-content: center;
-    
+
             img {
                 height: 100%;
                 // scale: 1.5;
             }
         }
-    
+
         .squad {
             width: calc((100% - 100px) / 3);
             text-align: center;
         }
-    
+
         .hour {
             text-align: center;
         }
@@ -126,11 +126,12 @@ h4 {
 //     // }
 // }
 
-@media screen and (min-width: 576px){
-    .margin-bottom-1{
+@media screen and (min-width: 576px) {
+    .margin-bottom-1 {
         width: 49%;
     }
-    .container{
+
+    .container {
         max-width: 991px;
         display: flex;
         flex-wrap: wrap;

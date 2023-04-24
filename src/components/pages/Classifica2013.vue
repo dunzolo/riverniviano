@@ -16,7 +16,7 @@ export default {
         return {
             store,
             items: pulcini_2013,
-            window:{
+            window: {
                 width: 0,
                 height: 0
             }
@@ -42,7 +42,7 @@ export default {
 <template lang="">
     <div>
         <AppHeader/>
-        <h1 class="title">TORNEO MICHELE PEZZA</h1>
+        <h1 class="title">MEMORIAL MICHELE PEZZA</h1>
         <div class="container">
             <div class="row" >
                 <div class="category bg-yellow"><span>PULCINI 2013</span></div>
@@ -74,9 +74,11 @@ p {
 .title {
     font-family: 'Bangers';
     color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    letter-spacing: .1rem;
     width: 100%;
     text-align: center;
-    font-size: 40px;
+    font-size: 2rem;
     margin-bottom: 1rem;
 }
 

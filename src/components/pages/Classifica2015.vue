@@ -16,7 +16,7 @@ export default {
         return {
             store,
             items: primi_calci_2015,
-            window:{
+            window: {
                 width: 0,
                 height: 0
             }
@@ -74,9 +74,11 @@ p {
 .title {
     font-family: 'Bangers';
     color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    letter-spacing: .1rem;
     width: 100%;
     text-align: center;
-    font-size: 40px;
+    font-size: 2rem;
     margin-bottom: 1rem;
 }
 

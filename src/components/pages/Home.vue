@@ -35,7 +35,7 @@ export default {
 <template lang="">
     <div>
         <AppHeader/>
-        <h1 class="title">TORNEO MICHELE PEZZA</h1>
+        <h1 class="title">MEMORIAL MICHELE PEZZA</h1>
         <AppCategories/>
         <div class="container">
             <!-- all'interno del startFrom indico l'indice da cui partire a ciclare l'array di oggetti -->
@@ -48,9 +48,11 @@ export default {
 .title {
     font-family: 'Bangers';
     color: white;
+    letter-spacing: .1rem;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     width: 100%;
     text-align: center;
-    font-size: 40px;
+    font-size: 2rem;
     margin-bottom: 1rem;
 }
 
@@ -60,6 +62,4 @@ export default {
     margin: 0 auto;
     padding-bottom: 1rem;
 }
-
-
 </style>
