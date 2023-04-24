@@ -15,7 +15,7 @@ const routes = [
         component: Home
     },
     {
-        path: '/riverniviano/contacts',
+        path: '/riverniviano/contatti',
         component: Contacts
     },
     {

@@ -42,14 +42,14 @@ export default {
             let name_path = name_squad.toLowerCase().replaceAll(" ", "");
             return '/riverniviano/' + name_path + '.png';
         },
-        printDay(){
-            if(this.elem == 0 && this.match.match.some(item => item.categoria == this.category))
+        printDay() {
+            if (this.elem == 0 && this.match.match.some(item => item.categoria == this.category))
                 return true
-            else{
-                
+            else {
+
                 return this.match.match.some((item) => {
-                    if(item.categoria == this.category){
-                        if(item.girone === this.elem)
+                    if (item.categoria == this.category) {
+                        if (item.girone === this.elem)
                             return true
                     }
                 });
@@ -90,7 +90,8 @@ export default {
 <style lang="scss" scoped>
 span,
 p {
-    font-size: 12px;
+    // font-size: 12px;
+    font-size: 2.7vmin;
 }
 
 h4 {
@@ -114,8 +115,10 @@ h4 {
     position: relative;
 
     .logo {
-        height: 50px;
-        width: 50px;
+        // height: 50px;
+        height: 12vmin;
+        // width: 50px;
+        width: 12vmin;
         background-color: white;
         border-radius: 50%;
         display: flex;
@@ -131,22 +134,40 @@ h4 {
     .squad {
         width: calc((100% - 100px) / 3);
         text-align: center;
+        padding-top: 1vmin;
     }
 
     .hour {
         text-align: center;
         width: 100%;
         position: absolute;
-        top: 0;
+        top: 0.5vmin;
+    }
+
+    .results {
+        padding-top: 1vmin;
     }
 }
 
 @media screen and (min-width: 576px) {
 
-    .full-container{
+    span,
+    p {
+        font-size: 1.5vmin;
+    }
+
+    .row .logo {
+        // height: 6vmin;
+        height: 50px;
+        // width: 6vmin;
+        width: 50px;
+    }
+
+    .full-container {
         display: flex;
         justify-content: space-between;
-        .container{
+
+        .container {
             width: 49%;
         }
     }

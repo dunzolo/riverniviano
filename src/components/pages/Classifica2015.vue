@@ -68,7 +68,8 @@ export default {
 <style lang="scss" scoped>
 span,
 p {
-    font-size: 12px;
+    font-size: 5vmin;
+    // font-size: 12px;
 }
 
 .title {
@@ -102,6 +103,14 @@ p {
             justify-content: center;
             padding: 0.10rem 0;
         }
+    }
+}
+
+@media screen and (min-width: 576px) {
+
+    span,
+    p {
+        font-size: 3vmin;
     }
 }
 </style>

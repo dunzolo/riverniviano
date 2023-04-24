@@ -39,7 +39,7 @@ export default {
                 <div class="sidemenu__wrapper">
                     <ul class="sidemenu__list">
                         <li class="sidemenu__item"><router-link to="/riverniviano/">Home</router-link></li>
-                        <li class="sidemenu__item"><router-link to="/riverniviano/contacts">Contacts</router-link></li>
+                        <li class="sidemenu__item"><router-link to="/riverniviano/contatti">Contatti</router-link></li>
                         <li class="sidemenu__item"><router-link to="/riverniviano/classifica2015">Classifica 2015</router-link></li>
                         <li class="sidemenu__item"><router-link to="/riverniviano/classifica2014">Classifica 2014</router-link></li>
                         <li class="sidemenu__item"><router-link to="/riverniviano/classifica2013">Classifica 2013</router-link></li>

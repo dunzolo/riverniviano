@@ -82,7 +82,8 @@ export default {
 <style lang="scss" scoped>
 span,
 p {
-    font-size: 12px;
+    // font-size: 12px;
+    font-size: 3vmin;
 }
 
 .row {
@@ -100,7 +101,7 @@ p {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 0.10rem 0;
+        padding: 0.2rem 0;
     }
 
     .col-1 {
@@ -119,10 +120,11 @@ p {
     }
 
     .logo {
-        height: 50px;
-        width: 50px;
+        // height: 50px;
+        height: 12vmin;
+        // width: 50px;
+        width: 12vmin;
         background-color: white;
-        // border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -144,8 +146,18 @@ p {
 }
 
 @media screen and (min-width: 576px) {
-    .classifica{
+    .classifica {
         width: 49%;
+    }
+
+    span,
+    p {
+        font-size: 1.5vmin;
+    }
+
+    .row .logo {
+        height: 6vmin;
+        width: 6vmin;
     }
 }
 </style>

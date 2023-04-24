@@ -66,7 +66,7 @@ export default {
 <style lang="scss" scoped>
 span,
 p {
-    font-size: 2vmin;
+    font-size: 2.8vmin;
 }
 
 h4 {
@@ -75,8 +75,8 @@ h4 {
 
 .day {
     width: 100%;
-    // border: 1px solid black;
     text-align: center;
+    font-size: 3.8vmin;
     padding: 0.10rem 0;
 }
 
@@ -88,11 +88,12 @@ h4 {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        // flex-wrap: wrap;
 
         .logo {
-            height: 50px;
-            width: 50px;
+            height: 12.5vmin;
+            // height: 50px;
+            width: 12.5vmin;
+            // width: 50px;
             background-color: white;
             border-radius: 50%;
             display: flex;
@@ -114,21 +115,25 @@ h4 {
             text-align: center;
         }
     }
-
-
 }
-
-
-
-// @media screen and (max-width: 576px){
-//     // .margin-bottom-1{
-//     //     width: 100%;
-//     // }
-// }
 
 @media screen and (min-width: 576px) {
     .margin-bottom-1 {
         width: 49%;
+    }
+
+    span,
+    p {
+        font-size: 1.5vmin;
+    }
+
+    .day {
+        font-size: 3vmin;
+    }
+
+    .row .col .logo {
+        height: 7vmin;
+        width: 7vmin;
     }
 
     .container {

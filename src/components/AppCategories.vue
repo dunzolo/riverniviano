@@ -59,7 +59,8 @@ export default {
 
 span,
 p {
-    font-size: 12px;
+    // font-size: 12px;
+    font-size: 2.8vmin;
 }
 
 .container {
@@ -81,6 +82,14 @@ p {
         text-align: center;
         padding: 0.10rem 0;
 
+    }
+}
+
+@media screen and (min-width:576px) {
+
+    span,
+    p {
+        font-size: 2vmin;
     }
 }
 </style>
