@@ -49,6 +49,9 @@ export default {
 <style lang="scss" scoped>
 .sticky {
     backdrop-filter: blur(10px);
+    // background-image: url('/public/background/TECHSTORE.jpg');
+    // background-size: cover;
+    // background-position: center;
     // background-color: rgba(0, 106, 255, 0.6);
     padding-bottom: 1rem;
     position: sticky;
@@ -65,6 +68,7 @@ p {
 
 .container {
     width: 90%;
+    max-width: 991px;
     margin: 0 auto;
 }
 

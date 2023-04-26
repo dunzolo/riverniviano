@@ -56,10 +56,12 @@ export default {
 @use '../style/partials/variables' as *;
 
 .sticky {
-    backdrop-filter: blur(10px);
     // transition: all .4s ease;
-
-    // background-color: rgba(0, 106, 255, 0.6);
+    // background-image: url('/public/background/TECHSTORE.jpg');
+    // background-size: cover;
+    // background-position: center;
+    background-color: #0356A2;
+    backdrop-filter: blur(10px);
     // box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -93,7 +95,7 @@ header {
             // background-image: url('/public/pexels-elīna-arāja-3377405.jpg'); //cambiato path
             background-image: url('/public/background/TECHSTORE.jpg'); //cambiato path
 
-            backdrop-filter: blur(10px);
+            backdrop-filter: blur(50px);
             background-size: cover;
             // background-size: contain;
             position: fixed;

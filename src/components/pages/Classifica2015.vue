@@ -85,6 +85,7 @@ p {
 
 .container {
     width: 90%;
+    max-width: 991px;
     margin: 0 auto 1rem;
 
     .row {

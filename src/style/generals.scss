@@ -1,5 +1,7 @@
 // @import "node_modules/bootstrap/scss/bootstrap";
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import 'animate.css';
 
 * {
     padding: 0;
@@ -16,14 +18,19 @@ body {
     background-attachment: fixed;
     // background-position: left center;
     // background-size: cover;
-    background-size:cover;
+    background-size: cover;
+    font-family: 'Roboto';
 
+}
+
+.green {
+    color: #26a63a;
 
 }
 
 .bg-green {
     // background-color: rgb(26, 197, 26);
-    background-color:#26a63a;
+    background-color: #26a63a;
 }
 
 .bg-yellow {
@@ -37,7 +44,7 @@ body {
 
 .bg-light-blue {
     // background-color: rgb(38, 188, 237);
-    background-color:#0096c7;
+    background-color: #0096c7;
 
 }
 
@@ -54,16 +61,17 @@ body {
 }
 
 @media screen and (min-width: 576px) {
-    .container-groups{
+    .container-groups {
         display: flex;
         justify-content: space-between;
     }
 
-    .container-matches{
+    .container-matches {
         display: flex;
         justify-content: space-between;
 
-        .container-matches-first, .container-matches-second{
+        .container-matches-first,
+        .container-matches-second {
             width: 49%;
         }
     }

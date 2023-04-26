@@ -3,6 +3,7 @@ import { reactive } from 'vue';
 export const store = reactive({
     //LOADING HOME PAGE
     is_loading: true,
+    is_animated: true,
 
     //CATEGORIE
     categoria_esordienti: 'Esordienti',
@@ -614,9 +615,9 @@ export const store = reactive({
                 }
             ]
         },
-        //'Giovedì 18 maggio 2023'
+        //'Venerdì 26 maggio 2023'
         {
-            giorno: 'Giovedì 18 maggio 2023',
+            giorno: 'Venerdì 26 maggio 2023',
 
             match: [
                 // squadre che giocano alle 18:00
