@@ -52,7 +52,7 @@ export default {
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     width: 100%;
     text-align: center;
-    font-size: 2rem;
+    font-size: 5vmin;
     margin-bottom: 1rem;
 }
 
@@ -61,5 +61,11 @@ export default {
     max-width: 991px;
     margin: 0 auto;
     padding-bottom: 1rem;
+}
+
+@media screen and (max-width:576px) {
+    .title {
+        font-size: 8vmin;
+    }
 }
 </style>

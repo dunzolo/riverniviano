@@ -30,9 +30,9 @@ export default {
         </div>
         <div id="sidemenu">
             <button class="sidemenu__btn" v-on:click="navOpen=!navOpen" v-bind:class="{active:navOpen}">
-                <span class="top" :class="showNavbar ? 'color-black' : ''"></span>
-                <span class="mid" :class="showNavbar ? 'color-black' : ''"></span>
-                <span class="bottom" :class="showNavbar ? 'color-black' : ''"></span>
+                <span class="top"></span>
+                <span class="mid"></span>
+                <span class="bottom"></span>
             </button>
             <transition name="translateX">
                 <nav v-show="navOpen">
@@ -60,7 +60,7 @@ export default {
     // background-image: url('/public/background/TECHSTORE.jpg');
     // background-size: cover;
     // background-position: center;
-    background-color: #0356A2;
+    background-color: rgba(3, 84, 160, 0.7);
     backdrop-filter: blur(10px);
     // box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.2);
 }
@@ -181,7 +181,7 @@ header {
                 a {
                     text-decoration: none;
                     line-height: 1.6em;
-                    font-size: 1.6em;
+                    font-size: 3vmin;
                     padding: .5em;
                     display: block;
                     color: white;
@@ -215,6 +215,12 @@ header {
     .translateX-leave-to {
         transform: translateX(-200px);
         opacity: 0;
+    }
+}
+
+@media screen and (max-width:576px) {
+    header #sidemenu .sidemenu__item a {
+        font-size: 5vmin;
     }
 }
 </style>

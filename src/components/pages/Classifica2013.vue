@@ -75,11 +75,11 @@ p {
 .title {
     font-family: 'Bangers';
     color: white;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     letter-spacing: .1rem;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     width: 100%;
     text-align: center;
-    font-size: 2rem;
+    font-size: 5vmin;
     margin-bottom: 1rem;
 }
 
@@ -104,6 +104,12 @@ p {
             justify-content: center;
             padding: 0.10rem 0;
         }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .title {
+        font-size: 8vmin;
     }
 }
 

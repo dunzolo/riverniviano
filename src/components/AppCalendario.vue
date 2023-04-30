@@ -28,14 +28,27 @@ export default {
                 case 'Esordienti':
                     category = 'bg-red'
                     break;
+                case null:
+                    category = 'd-none'
+                    break;
                 default:
                     break;
             }
             return category
         },
         getImage(name_squad) {
-            let name_path = name_squad.toLowerCase().replaceAll(" ", "");
-            return '/riverniviano/' + name_path + '.png';
+            if (name_squad != null) {
+                if (name_squad.includes('PERDENTE') || name_squad.includes('VINCENTE')) {
+                    return '/riverniviano/to-be-defined.png';
+                }
+                else {
+                    let name_path = name_squad.toLowerCase().replaceAll(" ", "");
+                    return '/riverniviano/' + name_path + '.png';
+                }
+            }
+            else {
+                return null;
+            }
         }
     }
 }
@@ -71,6 +84,10 @@ p {
 
 h4 {
     color: white
+}
+
+.d-none {
+    display: none;
 }
 
 .day {

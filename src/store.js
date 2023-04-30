@@ -230,15 +230,15 @@ export const store = reactive({
                     nome_squadra_ospite: 'BOBBIESE',
                     risultato_squadra_ospite: null,
                 },
-                // squadre che giocano alle 18:20
+                // squadre che giocano alle 18:00
                 {
-                    categoria: '2014',
-                    campo: "CAMPO 2",
-                    orario: "18:20",
-                    girone: 1,
-                    nome_squadra_casa: 'RIVERNIVIANO VERDE',
+                    categoria: null,
+                    campo: null,
+                    orario: null,
+                    girone: null,
+                    nome_squadra_casa: null,
                     risultato_squadra_casa: null,
-                    nome_squadra_ospite: 'TRAVESE',
+                    nome_squadra_ospite: null,
                     risultato_squadra_ospite: null,
                 },
                 // squadre che giocano alle 19:00
@@ -364,7 +364,29 @@ export const store = reactive({
                     risultato_squadra_casa: null,
                     nome_squadra_ospite: 'GOTICO',
                     risultato_squadra_ospite: null,
-                }
+                },
+                // squadre che giocano alle 20:00
+                {
+                    categoria: null,
+                    campo: null,
+                    orario: null,
+                    girone: null,
+                    nome_squadra_casa: null,
+                    risultato_squadra_casa: null,
+                    nome_squadra_ospite: null,
+                    risultato_squadra_ospite: null,
+                },
+                // squadre che giocano alle 20:20
+                {
+                    categoria: '2014',
+                    campo: "CAMPO 2",
+                    orario: "20:20",
+                    girone: 1,
+                    nome_squadra_casa: 'RIVERNIVIANO VERDE',
+                    risultato_squadra_casa: null,
+                    nome_squadra_ospite: 'TRAVESE',
+                    risultato_squadra_ospite: null,
+                },
             ]
         },
         //'Venerdì 12 maggio 2023'
@@ -625,43 +647,43 @@ export const store = reactive({
                     categoria: 'Esordienti',
                     campo: "CAMPO 1",
                     orario: "18:00",
-                    girone: 2,
-                    nome_squadra_casa: 'PODENZANO',
+                    girone: 1,
+                    nome_squadra_casa: 'RIVERNIVIANO',
                     risultato_squadra_casa: null,
-                    nome_squadra_ospite: 'AUDAX LIBERTAS',
+                    nome_squadra_ospite: 'BOBBIESE',
                     risultato_squadra_ospite: null,
                 },
                 // squadre che giocano alle 18:20
                 {
                     categoria: 'Esordienti',
-                    campo: "CAMPO 2",
-                    orario: "18:20",
+                    campo: "CAMPO 1",
+                    orario: "19:00",
                     girone: 2,
-                    nome_squadra_casa: 'RIVERNIVIANO BLU',
+                    nome_squadra_casa: 'BORGONOVESE',
                     risultato_squadra_casa: null,
-                    nome_squadra_ospite: 'VIGOR CHERO',
+                    nome_squadra_ospite: 'TRAVESE',
                     risultato_squadra_ospite: null,
                 },
                 // squadre che giocano alle 19:00
                 {
                     categoria: 'Esordienti',
                     campo: "CAMPO 1",
-                    orario: "19:00",
-                    girone: 2,
-                    nome_squadra_casa: 'JUNIOR CALENDASCO',
+                    orario: "20:00",
+                    girone: 1,
+                    nome_squadra_casa: 'PERDENTE PRIMA SEMIFINALE',
                     risultato_squadra_casa: null,
-                    nome_squadra_ospite: 'BOBBIESE',
+                    nome_squadra_ospite: 'PERDENTE SECONDA SEMIFINALE',
                     risultato_squadra_ospite: null,
                 },
                 // squadre che giocano alle 19:20
                 {
                     categoria: 'Esordienti',
-                    campo: "CAMPO 2",
-                    orario: "19:20",
-                    girone: 2,
-                    nome_squadra_casa: 'JUNIOR CALENDASCO',
+                    campo: "CAMPO 1",
+                    orario: "20:20",
+                    girone: 1,
+                    nome_squadra_casa: 'VINCENTE PRIMA SEMIFINALE',
                     risultato_squadra_casa: null,
-                    nome_squadra_ospite: 'AUDAX LIBERTAS',
+                    nome_squadra_ospite: 'VINCENTE SECONDA SEMIFINALE',
                     risultato_squadra_ospite: null,
                 }
             ]

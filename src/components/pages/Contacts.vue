@@ -84,7 +84,7 @@ export default {
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     width: 100%;
     text-align: center;
-    font-size: 2rem;
+    font-size: 5vmin;
     margin-bottom: 1rem;
 }
 
@@ -106,7 +106,7 @@ export default {
             align-items: center;
 
             i {
-                scale: 1.5;
+                scale: 2;
                 padding: 2rem;
 
             }
@@ -116,11 +116,32 @@ export default {
                 flex-direction: column;
                 color: white;
 
+                span {
+                    font-size: 2vmin;
+                }
+
                 a {
                     text-decoration: none;
                     color: white;
                 }
             }
+        }
+    }
+}
+
+@media screen and (max-width:576px) {
+    .title {
+        font-size: 8vmin;
+    }
+
+    .container ul li {
+
+        i {
+            scale: 1.5
+        }
+
+        div span {
+            font-size: 3.5vmin;
         }
     }
 }

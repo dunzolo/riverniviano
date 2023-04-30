@@ -52,7 +52,7 @@ export default {
     // background-image: url('/public/background/TECHSTORE.jpg');
     // background-size: cover;
     // background-position: center;
-    // background-color: rgba(0, 106, 255, 0.6);
+    background-color: rgba(3, 84, 160, 0.7);
     padding-bottom: 1rem;
     position: sticky;
     // z-index: 1;
