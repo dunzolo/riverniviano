@@ -8,6 +8,7 @@ export default {
     data() {
         return {
             store
+
         }
     },
     methods: {
@@ -49,6 +50,14 @@ export default {
             else {
                 return null;
             }
+        },
+        printDay(match) {
+            if (store.storage == null)
+                return true
+            else {
+                if (match.match.some(item => item.categoria == store.storage))
+                    return true
+            }
         }
     }
 }
@@ -56,19 +65,21 @@ export default {
 
 <template lang="">
     <div class="margin-top-1">
-        <div class="day"><h4>{{ match.giorno }}</h4></div>
+        <div class="day" v-if="printDay(match)"><h4>{{ match.giorno }}</h4></div>
         <div class="container">
-            <div class="margin-bottom-1" v-for="(item, index) in match.match" :key="index">
-                <div class="row" :class=getBackgroundMatch(item.categoria)>
-                    <div class="col">
-                        <div class="logo"><img :src="getImage(item.nome_squadra_casa)" :alt="item.nome_squadra_casa"></div>
-                        <div class="squad"><span>{{ item.nome_squadra_casa }}</span></div>
-                        <div class="hour">
-                            <p><strong>{{ item.campo }}</strong></p>
-                            <p><strong>{{ item.orario }}</strong></p>
+            <div class="margin-bottom-1" v-for="(item, index) in match.match" :key="index" >
+                <div v-if="store.storage == item.categoria || store.storage == null">
+                    <div class="row" :class=getBackgroundMatch(item.categoria)>
+                        <div class="col">
+                            <div class="logo"><img :src="getImage(item.nome_squadra_casa)" :alt="item.nome_squadra_casa"></div>
+                            <div class="squad"><span>{{ item.nome_squadra_casa }}</span></div>
+                            <div class="hour">
+                                <p><strong>{{ item.campo }}</strong></p>
+                                <p><strong>{{ item.orario }}</strong></p>
+                            </div>
+                            <div class="squad"><span>{{ item.nome_squadra_ospite }}</span></div>
+                            <div class="logo"><img :src="getImage(item.nome_squadra_ospite)" :alt="item.nome_squadra_ospite"></div>
                         </div>
-                        <div class="squad"><span>{{ item.nome_squadra_ospite }}</span></div>
-                        <div class="logo"><img :src="getImage(item.nome_squadra_ospite)" :alt="item.nome_squadra_ospite"></div>
                     </div>
                 </div>
             </div>

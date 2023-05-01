@@ -13,7 +13,7 @@ export default {
     },
     data() {
         return {
-            store
+            store,
         }
     },
     created() {
@@ -27,7 +27,6 @@ export default {
             //In base all'indice, ritorna array filtrato
             return array.slice(index);
         }
-
     },
 }
 </script>

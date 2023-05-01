@@ -4,6 +4,8 @@ export const store = reactive({
     //LOADING HOME PAGE
     is_loading: true,
     is_animated: true,
+    storage: null,
+    new_calendar: [],
 
     //CATEGORIE
     categoria_esordienti: 'Esordienti',
