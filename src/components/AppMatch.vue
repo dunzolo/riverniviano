@@ -68,18 +68,18 @@ export default {
             <div v-if="item.categoria === category">
                 <div v-if="item.girone == elem" class="row margin-bottom-1" :class=getBackgroundMatch(item.categoria)>
                     <div class="logo"><img :src="getImage(item.nome_squadra_casa)" :alt="item.nome_squadra_casa"></div>
-                    <div class="hour"><p><strong>{{ item.campo }} - {{ item.orario }}</strong></p></div>
-                    <div class="squad"><span>{{ item.nome_squadra_casa }}</span></div>
-                    <div class="results">{{ item.risultato_squadra_casa }} - {{ item.risultato_squadra_ospite }}</div>
-                    <div class="squad"><span>{{ item.nome_squadra_ospite }}</span></div>
+                    <div class="hour" v-if="item.risultato_squadra_casa == null"><p><strong>{{ item.campo }} - {{ item.orario }}</strong></p></div>
+                    <div class="squad" :class="item.risultato_squadra_casa != null ? 'padding-0' : ''"><span>{{ item.nome_squadra_casa }}</span></div>
+                    <div class="results" :class="item.risultato_squadra_casa != null ? 'padding-0' : ''">{{ item.risultato_squadra_casa }} - {{ item.risultato_squadra_ospite }}</div>
+                    <div class="squad" :class="item.risultato_squadra_casa != null ? 'padding-0' : ''"><span>{{ item.nome_squadra_ospite }}</span></div>
                     <div class="logo"><img :src="getImage(item.nome_squadra_ospite)" :alt="item.nome_squadra_ospite"></div>
                 </div>
                 <div v-if="elem == 0" class="row margin-bottom-1" :class=getBackgroundMatch(item.categoria)>
                     <div class="logo"><img :src="getImage(item.nome_squadra_casa)" :alt="item.nome_squadra_casa"></div>
-                    <div class="hour"><p><strong>{{ item.campo }} - {{ item.orario }}</strong></p></div>
-                    <div class="squad"><span>{{ item.nome_squadra_casa }}</span></div>
-                    <div class="results">{{ item.risultato_squadra_casa }} - {{ item.risultato_squadra_ospite }}</div>
-                    <div class="squad"><span>{{ item.nome_squadra_ospite }}</span></div>
+                    <div class="hour" v-if="item.risultato_squadra_casa == null"><p><strong>{{ item.campo }} - {{ item.orario }}</strong></p></div>
+                    <div class="squad" :class="item.risultato_squadra_casa != null ? 'padding-0' : ''"><span>{{ item.nome_squadra_casa }}</span></div>
+                    <div class="results" :class="item.risultato_squadra_casa != null ? 'padding-0' : ''">{{ item.risultato_squadra_casa }} - {{ item.risultato_squadra_ospite }}</div>
+                    <div class="squad" :class="item.risultato_squadra_casa != null ? 'padding-0' : ''"><span>{{ item.nome_squadra_ospite }}</span></div>
                     <div class="logo"><img :src="getImage(item.nome_squadra_ospite)" :alt="item.nome_squadra_ospite"></div>
                 </div>
             </div>
@@ -88,6 +88,11 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+.row .squad.padding-0,
+.row .results.padding-0 {
+    padding: 0;
+}
+
 span,
 p {
     // font-size: 12px;
