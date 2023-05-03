@@ -24,7 +24,7 @@ export const store = reactive({
                     orario: "18:00",
                     girone: 1,
                     nome_squadra_casa: 'RIVERNIVIANO',
-                    risultato_squadra_casa: 6,
+                    risultato_squadra_casa: 8,
                     nome_squadra_ospite: 'VIGOLZONE',
                     risultato_squadra_ospite: 0,
                 },
