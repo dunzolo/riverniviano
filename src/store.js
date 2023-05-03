@@ -24,9 +24,9 @@ export const store = reactive({
                     orario: "18:00",
                     girone: 1,
                     nome_squadra_casa: 'RIVERNIVIANO',
-                    risultato_squadra_casa: null,
+                    risultato_squadra_casa: 6,
                     nome_squadra_ospite: 'VIGOLZONE',
-                    risultato_squadra_ospite: null,
+                    risultato_squadra_ospite: 0,
                 },
                 // squadre che giocano alle 18:20
                 {
@@ -35,9 +35,9 @@ export const store = reactive({
                     orario: "18:20",
                     girone: 1,
                     nome_squadra_casa: 'RIVERNIVIANO VERDE',
-                    risultato_squadra_casa: null,
+                    risultato_squadra_casa: 2,
                     nome_squadra_ospite: 'BORGONOVESE',
-                    risultato_squadra_ospite: null,
+                    risultato_squadra_ospite: 7,
                 },
                 // squadre che giocano alle 19:00
                 {
@@ -46,9 +46,9 @@ export const store = reactive({
                     orario: "19:00",
                     girone: 1,
                     nome_squadra_casa: 'RIVERNIVIANO',
-                    risultato_squadra_casa: null,
+                    risultato_squadra_casa: 5,
                     nome_squadra_ospite: 'VIGOLZONE',
-                    risultato_squadra_ospite: null,
+                    risultato_squadra_ospite: 0,
                 },
                 // squadre che giocano alle 19:20
                 {
@@ -57,9 +57,9 @@ export const store = reactive({
                     orario: "19:20",
                     girone: 1,
                     nome_squadra_casa: 'TRAVESE',
-                    risultato_squadra_casa: null,
+                    risultato_squadra_casa: 4,
                     nome_squadra_ospite: 'LUGAGNANESE',
-                    risultato_squadra_ospite: null,
+                    risultato_squadra_ospite: 5,
                 }
             ]
         },

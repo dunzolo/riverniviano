@@ -9,9 +9,9 @@
             {
                 "id": 1,
                 "nome_squadra": "RIVERNIVIANO",
-                "goal_fatti": 0,
+                "goal_fatti": 6,
                 "goal_subiti": 0,
-                "punti": 0
+                "punti": 3
             },
             {
                 "id": 2,
@@ -22,16 +22,16 @@
             },
             {
                 "id": 3,
-                "nome_squadra": "VIGOLZONE",
+                "nome_squadra": "LUGAGNANESE",
                 "goal_fatti": 0,
                 "goal_subiti": 0,
                 "punti": 0
             },
             {
                 "id": 4,
-                "nome_squadra": "LUGAGNANESE",
+                "nome_squadra": "VIGOLZONE",
                 "goal_fatti": 0,
-                "goal_subiti": 0,
+                "goal_subiti": 6,
                 "punti": 0
             }
         ],
