@@ -126,9 +126,9 @@ export const store = reactive({
                     orario: "18:00",
                     girone: 2,
                     nome_squadra_casa: 'JUNIOR CALENDASCO',
-                    risultato_squadra_casa: null,
+                    risultato_squadra_casa: 1,
                     nome_squadra_ospite: 'GOTICO',
-                    risultato_squadra_ospite: null,
+                    risultato_squadra_ospite: 7,
                 },
                 // squadre che giocano alle 18:20
                 {
@@ -137,9 +137,9 @@ export const store = reactive({
                     orario: "18:20",
                     girone: 2,
                     nome_squadra_casa: 'RIVERNIVIANO BLU',
-                    risultato_squadra_casa: null,
+                    risultato_squadra_casa: 3,
                     nome_squadra_ospite: 'AUDAX LIBERTAS',
-                    risultato_squadra_ospite: null,
+                    risultato_squadra_ospite: 2,
                 },
                 // squadre che giocano alle 19:00
                 {
@@ -148,9 +148,9 @@ export const store = reactive({
                     orario: "19:00",
                     girone: 2,
                     nome_squadra_casa: 'GOSSOLENGO PITTOLO',
-                    risultato_squadra_casa: null,
+                    risultato_squadra_casa: 2,
                     nome_squadra_ospite: 'AUDAX LIBERTAS',
-                    risultato_squadra_ospite: null,
+                    risultato_squadra_ospite: 4,
                 },
                 // squadre che giocano alle 19:20
                 {
@@ -159,9 +159,9 @@ export const store = reactive({
                     orario: "19:20",
                     girone: 2,
                     nome_squadra_casa: 'JUNIOR CALENDASCO',
-                    risultato_squadra_casa: null,
+                    risultato_squadra_casa: 2,
                     nome_squadra_ospite: 'GOTICO',
-                    risultato_squadra_ospite: null,
+                    risultato_squadra_ospite: 0,
                 }
             ]
         },
