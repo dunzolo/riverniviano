@@ -23,15 +23,15 @@
             {
                 "id": 4,
                 "nome_squadra": "VIGOR CHERO",
-                "goal_fatti": 3,
-                "goal_subiti": 5,
-                "punti": 0
+                "goal_fatti": 7,
+                "goal_subiti": 7,
+                "punti": 3
             },
             {
                 "id": 2,
                 "nome_squadra": "VIGOLZONE",
-                "goal_fatti": 0,
-                "goal_subiti": 5,
+                "goal_fatti": 2,
+                "goal_subiti": 9,
                 "punti": 0
             }
         ],
