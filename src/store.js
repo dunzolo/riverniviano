@@ -296,13 +296,13 @@ export const store = reactive({
                 },
                 // squadre che giocano alle 19:00
                 {
-                    categoria: '2012',
-                    campo: "CAMPO 1",
-                    orario: "19:00",
-                    girone: 1,
-                    nome_squadra_casa: 'VIGOLZONE',
+                    categoria: null,
+                    campo: null,
+                    orario: null,
+                    girone: null,
+                    nome_squadra_casa: null,
                     risultato_squadra_casa: null,
-                    nome_squadra_ospite: 'LUGAGNANESE',
+                    nome_squadra_ospite: null,
                     risultato_squadra_ospite: null,
                 },
                 // squadre che giocano alle 19:20
@@ -369,13 +369,13 @@ export const store = reactive({
                 },
                 // squadre che giocano alle 20:00
                 {
-                    categoria: null,
-                    campo: null,
-                    orario: null,
-                    girone: null,
-                    nome_squadra_casa: null,
+                    categoria: '2012',
+                    campo: "CAMPO 1",
+                    orario: "20:00",
+                    girone: 1,
+                    nome_squadra_casa: 'VIGOLZONE',
                     risultato_squadra_casa: null,
-                    nome_squadra_ospite: null,
+                    nome_squadra_ospite: 'LUGAGNANESE',
                     risultato_squadra_ospite: null,
                 },
                 // squadre che giocano alle 20:20
