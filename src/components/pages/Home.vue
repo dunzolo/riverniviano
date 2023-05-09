@@ -38,7 +38,7 @@ export default {
         <AppCategories/>
         <div class="container">
             <!-- all'interno del startFrom indico l'indice da cui partire a ciclare l'array di oggetti -->
-            <AppCalendario v-for="(item, index) in this.startFrom(store.calendario, 5) " :key="index" :match="item"/>
+            <AppCalendario v-for="(item, index) in this.startFrom(store.calendario, 6) " :key="index" :match="item"/>
         </div>
     </div>
 </template>
