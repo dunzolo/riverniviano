@@ -497,9 +497,9 @@ export const store = reactive({
                     campo: "CAMPO 1",
                     orario: "19:00",
                     girone: 2,
-                    nome_squadra_casa: 'JUNIOR CALENDASCO',
+                    nome_squadra_casa: 'GOTICO',
                     risultato_squadra_casa: null,
-                    nome_squadra_ospite: 'AUDAX LIBERTAS',
+                    nome_squadra_ospite: 'GOSSOLENGO PITTOLO',
                     risultato_squadra_ospite: null,
                 },
                 // squadre che giocano alle 19:20
@@ -515,13 +515,13 @@ export const store = reactive({
                 },
                 // squadre che giocano alle 20:00
                 {
-                    categoria: '2012',
-                    campo: "CAMPO 1",
-                    orario: "20:00",
-                    girone: 2,
-                    nome_squadra_casa: 'GOTICO',
+                    categoria: null,
+                    campo: null,
+                    orario: null,
+                    girone: null,
+                    nome_squadra_casa: null,
                     risultato_squadra_casa: null,
-                    nome_squadra_ospite: 'GOSSOLENGO PITTOLO',
+                    nome_squadra_ospite: null,
                     risultato_squadra_ospite: null,
                 },
                 // squadre che giocano alle 20:20
@@ -564,15 +564,15 @@ export const store = reactive({
                     nome_squadra_ospite: 'PODENZANO',
                     risultato_squadra_ospite: null,
                 },
-                // squadre che giocano alle 19:00
+                // squadre che giocano alle 20:00
                 {
-                    categoria: '2013',
+                    categoria: '2012',
                     campo: "CAMPO 1",
                     orario: "19:00",
-                    girone: 1,
-                    nome_squadra_casa: 'VIGOLZONE',
+                    girone: 2,
+                    nome_squadra_casa: 'JUNIOR CALENDASCO',
                     risultato_squadra_casa: null,
-                    nome_squadra_ospite: 'GOTICO',
+                    nome_squadra_ospite: 'AUDAX LIBERTAS',
                     risultato_squadra_ospite: null,
                 },
                 // squadre che giocano alle 19:20
@@ -582,6 +582,17 @@ export const store = reactive({
                     orario: "19:20",
                     girone: 1,
                     nome_squadra_casa: 'BOBBIESE',
+                    risultato_squadra_casa: null,
+                    nome_squadra_ospite: 'GOTICO',
+                    risultato_squadra_ospite: null,
+                },
+                // squadre che giocano alle 20:00
+                {
+                    categoria: '2013',
+                    campo: "CAMPO 1",
+                    orario: "20:00",
+                    girone: 1,
+                    nome_squadra_casa: 'VIGOLZONE',
                     risultato_squadra_casa: null,
                     nome_squadra_ospite: 'GOTICO',
                     risultato_squadra_ospite: null,
