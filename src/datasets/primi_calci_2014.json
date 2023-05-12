@@ -9,9 +9,9 @@
             {
                 "id": 1,
                 "nome_squadra": "RIVERNIVIANO VERDE",
-                "goal_fatti": 2,
+                "goal_fatti": 9,
                 "goal_subiti": 7,
-                "punti": 0
+                "punti": 3
             },
             {
                 "id": 2,
@@ -24,7 +24,7 @@
                 "id": 3,
                 "nome_squadra": "TRAVESE",
                 "goal_fatti": 4,
-                "goal_subiti": 5,
+                "goal_subiti": 12,
                 "punti": 0
             },
             {
@@ -39,29 +39,29 @@
             {
                 "id": 1,
                 "nome_squadra": "RIVERNIVIANO BLU",
-                "goal_fatti": 3,
-                "goal_subiti": 2,
-                "punti": 3
+                "goal_fatti": 8,
+                "goal_subiti": 3,
+                "punti": 6
             },
             {
                 "id": 2,
                 "nome_squadra": "AUDAX LIBERTAS",
-                "goal_fatti": 2,
-                "goal_subiti": 3,
-                "punti": 0
+                "goal_fatti": 19,
+                "goal_subiti": 4,
+                "punti": 3
             },
             {
                 "id": 3,
                 "nome_squadra": "JUNIOR CALENDASCO",
-                "goal_fatti": 2,
-                "goal_subiti": 0,
+                "goal_fatti": 1,
+                "goal_subiti": 5,
                 "punti": 3
             },
             {
                 "id": 4,
                 "nome_squadra": "GOTICO",
-                "goal_fatti": 0,
-                "goal_subiti": 2,
+                "goal_fatti": 1,
+                "goal_subiti": 19,
                 "punti": 0
             }
         ]

@@ -23,15 +23,15 @@
             {
                 "id": 3,
                 "nome_squadra": "LUGAGNANESE",
-                "goal_fatti": 1,
+                "goal_fatti": 4,
                 "goal_subiti": 2,
-                "punti": 0
+                "punti": 3
             },
             {
                 "id": 4,
                 "nome_squadra": "VIGOLZONE",
                 "goal_fatti": 0,
-                "goal_subiti": 8,
+                "goal_subiti": 11,
                 "punti": 0
             }
         ],
@@ -39,9 +39,9 @@
             {
                 "id": 1,
                 "nome_squadra": "JUNIOR CALENDASCO",
-                "goal_fatti": 1,
-                "goal_subiti": 7,
-                "punti": 0
+                "goal_fatti": 5,
+                "goal_subiti": 8,
+                "punti": 3
             },
             {
                 "id": 2,
@@ -53,8 +53,8 @@
             {
                 "id": 3,
                 "nome_squadra": "GOSSOLENGO PITTOLO",
-                "goal_fatti": 2,
-                "goal_subiti": 4,
+                "goal_fatti": 3,
+                "goal_subiti": 8,
                 "punti": 0
             },
             {

@@ -46,9 +46,9 @@
             {
                 "id": 1,
                 "nome_squadra": "PODENZANO",
-                "goal_fatti": 3,
+                "goal_fatti": 19,
                 "goal_subiti": 0,
-                "punti": 3
+                "punti": 6
             },
             {
                 "id": 2,
@@ -61,7 +61,7 @@
                 "id": 3,
                 "nome_squadra": "BOBBIESE",
                 "goal_fatti": 0,
-                "goal_subiti": 19,
+                "goal_subiti": 35,
                 "punti": 0
             }
         ]
