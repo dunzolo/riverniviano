@@ -39,7 +39,7 @@ export default {
         },
         getImage(name_squad) {
             if (name_squad != null) {
-                if (name_squad.includes('PERDENTE') || name_squad.includes('VINCENTE')) {
+                if (name_squad.includes('PERDENTE') || name_squad.includes('VINCENTE') || name_squad.includes('GIRONE')) {
                     return '/riverniviano/to-be-defined.png';
                 }
                 else {
@@ -73,9 +73,12 @@ export default {
                         <div class="col">
                             <div class="logo"><img :src="getImage(item.nome_squadra_casa)" :alt="item.nome_squadra_casa"></div>
                             <div class="squad"><span>{{ item.nome_squadra_casa }}</span></div>
-                            <div class="hour">
+                            <div class="hour" v-if="item.risultato_squadra_casa == null">
                                 <p><strong>{{ item.campo }}</strong></p>
                                 <p><strong>{{ item.orario }}</strong></p>
+                            </div>
+                            <div v-else>
+                                <p><strong>{{ item.risultato_squadra_casa }} - {{ item.risultato_squadra_ospite }}</strong></p>
                             </div>
                             <div class="squad"><span>{{ item.nome_squadra_ospite }}</span></div>
                             <div class="logo"><img :src="getImage(item.nome_squadra_ospite)" :alt="item.nome_squadra_ospite"></div>

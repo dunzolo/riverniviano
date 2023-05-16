@@ -785,4 +785,211 @@ export const store = reactive({
             ]
         },
     ],
+
+    calendario_fasi_finali: [
+        //'Venerdì 19 maggio 2023'
+        {
+            giorno: 'Venerdì 19 maggio 2023',
+
+            match: [
+                // squadre che giocano alle 18:00
+                {
+                    categoria: '2012',
+                    campo: "CAMPO 1",
+                    orario: "18:00",
+                    // girone: 1,
+                    nome_squadra_casa: '1° GIRONE A',
+                    risultato_squadra_casa: null,
+                    nome_squadra_ospite: '2° GIRONE B',
+                    risultato_squadra_ospite: null,
+                },
+                // squadre che giocano alle 18:00
+                {
+                    categoria: '2014',
+                    campo: "CAMPO 1",
+                    orario: "18:20",
+                    // girone: 1,
+                    nome_squadra_casa: '1° GIRONE E',
+                    risultato_squadra_casa: null,
+                    nome_squadra_ospite: '2° GIRONE F',
+                    risultato_squadra_ospite: null,
+                },
+                // squadre che giocano alle 18:00
+                {
+                    categoria: '2012',
+                    campo: "CAMPO 1",
+                    orario: "19:00",
+                    // girone: 1,
+                    nome_squadra_casa: '1° GIRONE B',
+                    risultato_squadra_casa: null,
+                    nome_squadra_ospite: '2° GIRONE A',
+                    risultato_squadra_ospite: null,
+                },
+                // squadre che giocano alle 18:00
+                {
+                    categoria: '2014',
+                    campo: "CAMPO 1",
+                    orario: "19:20",
+                    // girone: 1,
+                    nome_squadra_casa: '1° GIRONE F',
+                    risultato_squadra_casa: null,
+                    nome_squadra_ospite: '2° GIRONE E',
+                    risultato_squadra_ospite: null,
+                }
+            ]
+        },
+        //'Lunedì 22 maggio 2023'
+        {
+            giorno: 'Lunedì 22 maggio 2023',
+
+            match: [
+                // squadre che giocano alle 18:00
+                {
+                    categoria: '2013',
+                    campo: "CAMPO 1",
+                    orario: "18:00",
+                    // girone: 1,
+                    nome_squadra_casa: '1° GIRONE C',
+                    risultato_squadra_casa: null,
+                    nome_squadra_ospite: '2° GIRONE D',
+                    risultato_squadra_ospite: null,
+                },
+                // squadre che giocano alle 18:00
+                {
+                    categoria: '2015',
+                    campo: "CAMPO 1",
+                    orario: "18:20",
+                    // girone: 1,
+                    nome_squadra_casa: '1° GIRONE G',
+                    risultato_squadra_casa: null,
+                    nome_squadra_ospite: '2° GIRONE H',
+                    risultato_squadra_ospite: null,
+                },
+                // squadre che giocano alle 18:00
+                {
+                    categoria: '2013',
+                    campo: "CAMPO 1",
+                    orario: "19:00",
+                    // girone: 1,
+                    nome_squadra_casa: '1° GIRONE C',
+                    risultato_squadra_casa: null,
+                    nome_squadra_ospite: '2° GIRONE D',
+                    risultato_squadra_ospite: null,
+                },
+                // squadre che giocano alle 18:00
+                {
+                    categoria: '2015',
+                    campo: "CAMPO 1",
+                    orario: "19:20",
+                    // girone: 1,
+                    nome_squadra_casa: '1° GIRONE G',
+                    risultato_squadra_casa: null,
+                    nome_squadra_ospite: '2° GIRONE H',
+                    risultato_squadra_ospite: null,
+                }
+            ]
+        },
+        //'Martedì 23 maggio 2023'
+        {
+            giorno: 'Martedì 23 maggio 2023',
+
+            match: [
+                // squadre che giocano alle 18:00
+                {
+                    categoria: '2012',
+                    campo: "CAMPO 1",
+                    orario: "18:00",
+                    // girone: 1,
+                    nome_squadra_casa: 'PERDENTE PRIMA SEMIFINALE',
+                    risultato_squadra_casa: null,
+                    nome_squadra_ospite: 'VINCENTE SECONDA SEMIFINALE',
+                    risultato_squadra_ospite: null,
+                },
+                // squadre che giocano alle 18:00
+                {
+                    categoria: '2014',
+                    campo: "CAMPO 1",
+                    orario: "18:20",
+                    // girone: 1,
+                    nome_squadra_casa: 'PERDENTE PRIMA SEMIFINALE',
+                    risultato_squadra_casa: null,
+                    nome_squadra_ospite: 'VINCENTE SECONDA SEMIFINALE',
+                    risultato_squadra_ospite: null,
+                },
+                // squadre che giocano alle 18:00
+                {
+                    categoria: '2012',
+                    campo: "CAMPO 1",
+                    orario: "19:00",
+                    // girone: 1,
+                    nome_squadra_casa: 'PERDENTE PRIMA SEMIFINALE',
+                    risultato_squadra_casa: null,
+                    nome_squadra_ospite: 'VINCENTE SECONDA SEMIFINALE',
+                    risultato_squadra_ospite: null,
+                },
+                // squadre che giocano alle 18:00
+                {
+                    categoria: '2014',
+                    campo: "CAMPO 1",
+                    orario: "19:20",
+                    // girone: 1,
+                    nome_squadra_casa: 'PERDENTE PRIMA SEMIFINALE',
+                    risultato_squadra_casa: null,
+                    nome_squadra_ospite: 'VINCENTE SECONDA SEMIFINALE',
+                    risultato_squadra_ospite: null,
+                }
+            ]
+        },
+        //'Giovedì 25 maggio 2023'
+        {
+            giorno: 'Giovedì 25 maggio 2023',
+
+            match: [
+                // squadre che giocano alle 18:00
+                {
+                    categoria: '2013',
+                    campo: "CAMPO 1",
+                    orario: "18:00",
+                    // girone: 1,
+                    nome_squadra_casa: 'PERDENTE PRIMA SEMIFINALE',
+                    risultato_squadra_casa: null,
+                    nome_squadra_ospite: 'VINCENTE SECONDA SEMIFINALE',
+                    risultato_squadra_ospite: null,
+                },
+                // squadre che giocano alle 18:00
+                {
+                    categoria: '2015',
+                    campo: "CAMPO 1",
+                    orario: "18:20",
+                    // girone: 1,
+                    nome_squadra_casa: 'PERDENTE PRIMA SEMIFINALE',
+                    risultato_squadra_casa: null,
+                    nome_squadra_ospite: 'VINCENTE SECONDA SEMIFINALE',
+                    risultato_squadra_ospite: null,
+                },
+                // squadre che giocano alle 18:00
+                {
+                    categoria: '2013',
+                    campo: "CAMPO 1",
+                    orario: "19:00",
+                    // girone: 1,
+                    nome_squadra_casa: 'PERDENTE PRIMA SEMIFINALE',
+                    risultato_squadra_casa: null,
+                    nome_squadra_ospite: 'VINCENTE SECONDA SEMIFINALE',
+                    risultato_squadra_ospite: null,
+                },
+                // squadre che giocano alle 18:00
+                {
+                    categoria: '2015',
+                    campo: "CAMPO 1",
+                    orario: "19:20",
+                    // girone: 1,
+                    nome_squadra_casa: 'PERDENTE PRIMA SEMIFINALE',
+                    risultato_squadra_casa: null,
+                    nome_squadra_ospite: 'VINCENTE SECONDA SEMIFINALE',
+                    risultato_squadra_ospite: null,
+                }
+            ]
+        },
+    ]
 })

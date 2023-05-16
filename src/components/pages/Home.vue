@@ -4,12 +4,14 @@ import { store } from '../../store.js';
 import AppHeader from '../AppHeader.vue';
 import AppCategories from '../AppCategories.vue';
 import AppCalendario from '../AppCalendario.vue';
+import AppMatch from '../AppMatch.vue';
 
 export default {
     components: {
         AppHeader,
         AppCategories,
         AppCalendario,
+        AppMatch
     },
     data() {
         return {
@@ -37,8 +39,15 @@ export default {
         <h1 class="title">MEMORIAL MICHELE PEZZA</h1>
         <AppCategories/>
         <div class="container">
+            <!-- stampo tutte le giornate fino alle fasi finali -->
             <!-- all'interno del startFrom indico l'indice da cui partire a ciclare l'array di oggetti -->
-            <AppCalendario v-for="(item, index) in this.startFrom(store.calendario, 8) " :key="index" :match="item"/>
+            <AppCalendario v-for="(item, index) in this.startFrom(store.calendario.slice(0, -1), 8) " :key="index" :match="item"/>
+
+            <!-- stampo partite fasi finali -->
+            <AppCalendario v-for="(item, index) in store.calendario_fasi_finali" :key="index" :match="item"/>
+            
+            <!-- stampo solo la giornata finale -->
+            <AppCalendario v-for="(item, index) in store.calendario.slice(-1)" :key="index" :match="item"/>
         </div>
     </div>
 </template>
