@@ -44,7 +44,10 @@ export default {
             return arrays.sort((a, b) => {
                 if (b.punti < a.punti) return -1;
                 if (b.punti > a.punti) return 1;
-                return 0;
+                if (a.punti == b.punti) {
+                    if ((a.goal_fatti - a.goal_subiti) > (b.goal_fatti - b.goal_subiti)) return -1;
+                    if ((a.goal_fatti - a.goal_subiti) < (b.goal_fatti - b.goal_subiti)) return 1;
+                }
             });
         }
     }
