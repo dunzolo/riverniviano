@@ -476,9 +476,9 @@ export const store = reactive({
                     orario: "18:00",
                     girone: 1,
                     nome_squadra_casa: 'VIGOLZONE',
-                    risultato_squadra_casa: null,
+                    risultato_squadra_casa: 0,
                     nome_squadra_ospite: 'BOBBIESE',
-                    risultato_squadra_ospite: null,
+                    risultato_squadra_ospite: 4,
                 },
                 // squadre che giocano alle 18:20
                 {
@@ -487,9 +487,9 @@ export const store = reactive({
                     orario: "18:20",
                     girone: 1,
                     nome_squadra_casa: 'BORGONOVESE',
-                    risultato_squadra_casa: null,
+                    risultato_squadra_casa: 2,
                     nome_squadra_ospite: 'TRAVESE',
-                    risultato_squadra_ospite: null,
+                    risultato_squadra_ospite: 3,
                 },
                 // squadre che giocano alle 19:00
                 {
@@ -498,9 +498,9 @@ export const store = reactive({
                     orario: "19:00",
                     girone: 2,
                     nome_squadra_casa: 'GOTICO',
-                    risultato_squadra_casa: null,
+                    risultato_squadra_casa: 1,
                     nome_squadra_ospite: 'GOSSOLENGO PITTOLO',
-                    risultato_squadra_ospite: null,
+                    risultato_squadra_ospite: 4,
                 },
                 // squadre che giocano alle 19:20
                 {
@@ -509,9 +509,9 @@ export const store = reactive({
                     orario: "19:20",
                     girone: 2,
                     nome_squadra_casa: 'RIVERNIVIANO BLU',
-                    risultato_squadra_casa: null,
+                    risultato_squadra_casa: 4,
                     nome_squadra_ospite: 'GOTICO',
-                    risultato_squadra_ospite: null,
+                    risultato_squadra_ospite: 1,
                 },
                 // squadre che giocano alle 20:00
                 {
@@ -520,9 +520,9 @@ export const store = reactive({
                     orario: "20:00",
                     girone: 1,
                     nome_squadra_casa: "RIVERNIVIANO",
-                    risultato_squadra_casa: null,
+                    risultato_squadra_casa: 5,
                     nome_squadra_ospite: "LUGAGNANESE",
-                    risultato_squadra_ospite: null,
+                    risultato_squadra_ospite: 4,
                 },
                 // squadre che giocano alle 20:20
                 {
@@ -531,9 +531,9 @@ export const store = reactive({
                     orario: "20:20",
                     girone: 2,
                     nome_squadra_casa: 'AUDAX LIBERTAS',
-                    risultato_squadra_casa: null,
+                    risultato_squadra_casa: 8,
                     nome_squadra_ospite: 'JUNIOR CALENDASCO',
-                    risultato_squadra_ospite: null,
+                    risultato_squadra_ospite: 0,
                 }
             ]
         },
@@ -725,7 +725,7 @@ export const store = reactive({
                     categoria: '2014',
                     campo: "CAMPO 2",
                     orario: "20:20",
-                    girone: 2,
+                    girone: 1,
                     nome_squadra_casa: 'RIVERNIVIANO VERDE',
                     risultato_squadra_casa: null,
                     nome_squadra_ospite: 'LUGAGNANESE',

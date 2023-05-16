@@ -9,16 +9,16 @@
             {
                 "id": 1,
                 "nome_squadra": "RIVERNIVIANO",
-                "goal_fatti": 10,
-                "goal_subiti": 2,
-                "punti": 4
+                "goal_fatti": 15,
+                "goal_subiti": 6,
+                "punti": 7
             },
             {
                 "id": 2,
                 "nome_squadra": "BOBBIESE",
-                "goal_fatti": 4,
+                "goal_fatti": 8,
                 "goal_subiti": 3,
-                "punti": 4
+                "punti": 7
             },
             {
                 "id": 3,
@@ -46,16 +46,16 @@
             {
                 "id": 2,
                 "nome_squadra": "GOTICO",
-                "goal_fatti": 7,
-                "goal_subiti": 1,
+                "goal_fatti": 8,
+                "goal_subiti": 5,
                 "punti": 3
             },
             {
                 "id": 3,
                 "nome_squadra": "GOSSOLENGO PITTOLO",
-                "goal_fatti": 3,
-                "goal_subiti": 8,
-                "punti": 0
+                "goal_fatti": 7,
+                "goal_subiti": 9,
+                "punti": 3
             },
             {
                 "id": 4,
