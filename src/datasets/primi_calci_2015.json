@@ -46,23 +46,23 @@
             {
                 "id": 2,
                 "nome_squadra": "AUDAX LIBERTAS",
-                "goal_fatti": 8,
+                "goal_fatti": 9,
                 "goal_subiti": 2,
                 "punti": 6
             },
             {
                 "id": 3,
                 "nome_squadra": "JUNIOR CALENDASCO",
-                "goal_fatti": 6,
-                "goal_subiti": 9,
+                "goal_fatti": 7,
+                "goal_subiti": 13,
                 "punti": 0
             },
             {
                 "id": 4,
                 "nome_squadra": "VIGOR CHERO",
-                "goal_fatti": 1,
-                "goal_subiti": 5,
-                "punti": 0
+                "goal_fatti": 5,
+                "goal_subiti": 6,
+                "punti": 3
             }
         ]
     ]

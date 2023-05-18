@@ -41,7 +41,7 @@ export default {
         <div class="container">
             <!-- stampo tutte le giornate fino alle fasi finali -->
             <!-- all'interno del startFrom indico l'indice da cui partire a ciclare l'array di oggetti -->
-            <AppCalendario v-for="(item, index) in this.startFrom(store.calendario.slice(0, -1), 9) " :key="index" :match="item"/>
+            <AppCalendario v-for="(item, index) in this.startFrom(store.calendario.slice(0, -1), 10) " :key="index" :match="item"/>
 
             <!-- stampo partite fasi finali -->
             <AppCalendario v-for="(item, index) in store.calendario_fasi_finali" :key="index" :match="item"/>

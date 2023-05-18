@@ -39,9 +39,9 @@
             {
                 "id": 4,
                 "nome_squadra": "AUDAX LIBERTAS",
-                "goal_fatti": 19,
+                "goal_fatti": 24,
                 "goal_subiti": 0,
-                "punti": 3
+                "punti": 6
             },
             {
                 "id": 1,
@@ -54,7 +54,7 @@
                 "id": 2,
                 "nome_squadra": "JUNIOR CALENDASCO",
                 "goal_fatti": 0,
-                "goal_subiti": 3,
+                "goal_subiti": 8,
                 "punti": 0
             },
             {
