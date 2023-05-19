@@ -9,9 +9,9 @@
             {
                 "id": 1,
                 "nome_squadra": "RIVERNIVIANO VERDE",
-                "goal_fatti": 9,
-                "goal_subiti": 7,
-                "punti": 3
+                "goal_fatti": 15,
+                "goal_subiti": 9,
+                "punti": 6
             },
             {
                 "id": 2,
@@ -30,8 +30,8 @@
             {
                 "id": 4,
                 "nome_squadra": "LUGAGNANESE",
-                "goal_fatti": 7,
-                "goal_subiti": 8,
+                "goal_fatti": 9,
+                "goal_subiti": 14,
                 "punti": 3
             }
         ],
