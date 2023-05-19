@@ -752,7 +752,7 @@ export const store = reactive({
                 // squadre che giocano alle 18:20
                 {
                     categoria: 'Esordienti',
-                    campo: "CAMPO 1",
+                    campo: "CAMPO 2",
                     orario: "19:00",
                     girone: 2,
                     nome_squadra_casa: 'BORGONOVESE',
@@ -774,7 +774,7 @@ export const store = reactive({
                 // squadre che giocano alle 19:20
                 {
                     categoria: 'Esordienti',
-                    campo: "CAMPO 1",
+                    campo: "CAMPO 2",
                     orario: "20:20",
                     girone: 1,
                     nome_squadra_casa: 'VINCENTE PRIMA SEMIFINALE',
@@ -787,57 +787,57 @@ export const store = reactive({
     ],
 
     calendario_fasi_finali: [
-        //'Venerdì 19 maggio 2023'
-        {
-            giorno: 'Venerdì 19 maggio 2023',
+        //'Venerdì 19 maggio 2023' - ANNULLATA
+        // {
+        //     giorno: 'Venerdì 19 maggio 2023',
 
-            match: [
-                // squadre che giocano alle 18:00
-                {
-                    categoria: '2012',
-                    campo: "CAMPO 1",
-                    orario: "18:00",
-                    // girone: 1,
-                    nome_squadra_casa: 'RIVERNIVIANO',
-                    risultato_squadra_casa: null,
-                    nome_squadra_ospite: 'GOTICO',
-                    risultato_squadra_ospite: null,
-                },
-                // squadre che giocano alle 18:00
-                {
-                    categoria: '2014',
-                    campo: "CAMPO 1",
-                    orario: "18:20",
-                    // girone: 1,
-                    nome_squadra_casa: 'BORGONOVESE',
-                    risultato_squadra_casa: null,
-                    nome_squadra_ospite: 'AUDAX LIBERTAS',
-                    risultato_squadra_ospite: null,
-                },
-                // squadre che giocano alle 18:00
-                {
-                    categoria: '2012',
-                    campo: "CAMPO 1",
-                    orario: "19:00",
-                    // girone: 1,
-                    nome_squadra_casa: 'AUDAX LIBERTAS',
-                    risultato_squadra_casa: null,
-                    nome_squadra_ospite: 'BOBBIESE',
-                    risultato_squadra_ospite: null,
-                },
-                // squadre che giocano alle 18:00
-                {
-                    categoria: '2014',
-                    campo: "CAMPO 1",
-                    orario: "19:20",
-                    // girone: 1,
-                    nome_squadra_casa: 'RIVERNIVIANO BLU',
-                    risultato_squadra_casa: null,
-                    nome_squadra_ospite: 'RIVERNIVIANO VERDE',
-                    risultato_squadra_ospite: null,
-                }
-            ]
-        },
+        //     match: [
+        //         // squadre che giocano alle 18:00
+        //         {
+        //             categoria: '2012',
+        //             campo: "CAMPO 1",
+        //             orario: "18:00",
+        //             // girone: 1,
+        //             nome_squadra_casa: 'RIVERNIVIANO',
+        //             risultato_squadra_casa: null,
+        //             nome_squadra_ospite: 'GOTICO',
+        //             risultato_squadra_ospite: null,
+        //         },
+        //         // squadre che giocano alle 18:00
+        //         {
+        //             categoria: '2014',
+        //             campo: "CAMPO 1",
+        //             orario: "18:20",
+        //             // girone: 1,
+        //             nome_squadra_casa: 'BORGONOVESE',
+        //             risultato_squadra_casa: null,
+        //             nome_squadra_ospite: 'AUDAX LIBERTAS',
+        //             risultato_squadra_ospite: null,
+        //         },
+        //         // squadre che giocano alle 18:00
+        //         {
+        //             categoria: '2012',
+        //             campo: "CAMPO 1",
+        //             orario: "19:00",
+        //             // girone: 1,
+        //             nome_squadra_casa: 'AUDAX LIBERTAS',
+        //             risultato_squadra_casa: null,
+        //             nome_squadra_ospite: 'BOBBIESE',
+        //             risultato_squadra_ospite: null,
+        //         },
+        //         // squadre che giocano alle 18:00
+        //         {
+        //             categoria: '2014',
+        //             campo: "CAMPO 1",
+        //             orario: "19:20",
+        //             // girone: 1,
+        //             nome_squadra_casa: 'RIVERNIVIANO BLU',
+        //             risultato_squadra_casa: null,
+        //             nome_squadra_ospite: 'RIVERNIVIANO VERDE',
+        //             risultato_squadra_ospite: null,
+        //         }
+        //     ]
+        // },
         //'Lunedì 22 maggio 2023'
         {
             giorno: 'Lunedì 22 maggio 2023',
@@ -845,27 +845,27 @@ export const store = reactive({
             match: [
                 // squadre che giocano alle 18:00
                 {
-                    categoria: '2013',
+                    categoria: '2012',
                     campo: "CAMPO 1",
                     orario: "18:00",
                     // girone: 1,
                     nome_squadra_casa: 'RIVERNIVIANO',
                     risultato_squadra_casa: null,
-                    nome_squadra_ospite: 'PODENZANO',
+                    nome_squadra_ospite: 'GOTICO',
                     risultato_squadra_ospite: null,
                 },
-                // squadre che giocano alle 18:00
+                // squadre che giocano alle 18:20
                 {
-                    categoria: '2015',
-                    campo: "CAMPO 1",
+                    categoria: '2014',
+                    campo: "CAMPO 2",
                     orario: "18:20",
                     // girone: 1,
-                    nome_squadra_casa: 'GOTICO',
+                    nome_squadra_casa: 'BORGONOVESE',
                     risultato_squadra_casa: null,
-                    nome_squadra_ospite: 'RIVERNIVIANO BLU',
+                    nome_squadra_ospite: 'AUDAX LIBERTAS',
                     risultato_squadra_ospite: null,
                 },
-                // squadre che giocano alle 18:00
+                //squadre che giocano alle 19:00
                 {
                     categoria: '2013',
                     campo: "CAMPO 1",
@@ -876,15 +876,37 @@ export const store = reactive({
                     nome_squadra_ospite: 'GOTICO',
                     risultato_squadra_ospite: null,
                 },
-                // squadre che giocano alle 18:00
+                // squadre che giocano alle 19:20
                 {
-                    categoria: '2015',
-                    campo: "CAMPO 1",
+                    categoria: '2014',
+                    campo: "CAMPO 2",
                     orario: "19:20",
+                    // girone: 1,
+                    nome_squadra_casa: 'RIVERNIVIANO BLU',
+                    risultato_squadra_casa: null,
+                    nome_squadra_ospite: 'RIVERNIVIANO VERDE',
+                    risultato_squadra_ospite: null,
+                },
+                // squadre che giocano alle 20:00
+                {
+                    categoria: '2012',
+                    campo: "CAMPO 1",
+                    orario: "20:00",
                     // girone: 1,
                     nome_squadra_casa: 'AUDAX LIBERTAS',
                     risultato_squadra_casa: null,
-                    nome_squadra_ospite: 'RIVERNIVIANO VERDE',
+                    nome_squadra_ospite: 'BOBBIESE',
+                    risultato_squadra_ospite: null,
+                },
+                // squadre che giocano alle 20:20
+                {
+                    categoria: '2015',
+                    campo: "CAMPO 2",
+                    orario: "20:20",
+                    // girone: 1,
+                    nome_squadra_casa: 'GOTICO',
+                    risultato_squadra_casa: null,
+                    nome_squadra_ospite: 'RIVERNIVIANO BLU',
                     risultato_squadra_ospite: null,
                 }
             ]
@@ -908,7 +930,7 @@ export const store = reactive({
                 // squadre che giocano alle 18:00
                 {
                     categoria: '2014',
-                    campo: "CAMPO 1",
+                    campo: "CAMPO 2",
                     orario: "18:20",
                     // girone: 1,
                     nome_squadra_casa: 'PERDENTE PRIMA SEMIFINALE',
@@ -930,12 +952,63 @@ export const store = reactive({
                 // squadre che giocano alle 18:00
                 {
                     categoria: '2014',
-                    campo: "CAMPO 1",
+                    campo: "CAMPO 2",
                     orario: "19:20",
                     // girone: 1,
                     nome_squadra_casa: 'VINCENTE PRIMA SEMIFINALE',
                     risultato_squadra_casa: null,
                     nome_squadra_ospite: 'VINCENTE SECONDA SEMIFINALE',
+                    risultato_squadra_ospite: null,
+                }
+            ]
+        },
+        //'Mercoledì 23 maggio 2023'
+        {
+            giorno: 'Mercoledì 23 maggio 2023',
+
+            match: [
+                // squadre che giocano alle 18:00
+                {
+                    categoria: null,
+                    campo: null,
+                    orario: null,
+                    // girone: 1,
+                    nome_squadra_casa: null,
+                    risultato_squadra_casa: null,
+                    nome_squadra_ospite: null,
+                    risultato_squadra_ospite: null,
+                },
+                // squadre che giocano alle 18:00
+                {
+                    categoria: null,
+                    campo: null,
+                    orario: null,
+                    // girone: 1,
+                    nome_squadra_casa: null,
+                    risultato_squadra_casa: null,
+                    nome_squadra_ospite: null,
+                    risultato_squadra_ospite: null,
+                },
+                // squadre che giocano alle 18:00
+                {
+                    categoria: '2013',
+                    campo: "CAMPO 1",
+                    orario: "19:00",
+                    // girone: 1,
+                    nome_squadra_casa: 'RIVERNIVIANO',
+                    risultato_squadra_casa: null,
+                    nome_squadra_ospite: 'PODENZANO',
+                    risultato_squadra_ospite: null,
+                },
+                // squadre che giocano alle 18:00
+                {
+                    categoria: '2015',
+                    campo: "CAMPO 2",
+                    orario: "19:20",
+                    // girone: 1,
+                    nome_squadra_casa: 'AUDAX LIBERTAS',
+                    risultato_squadra_casa: null,
+                    nome_squadra_ospite: 'RIVERNIVIANO VERDE',
                     risultato_squadra_ospite: null,
                 }
             ]
@@ -959,7 +1032,7 @@ export const store = reactive({
                 // squadre che giocano alle 18:00
                 {
                     categoria: '2015',
-                    campo: "CAMPO 1",
+                    campo: "CAMPO 2",
                     orario: "18:20",
                     // girone: 1,
                     nome_squadra_casa: 'PERDENTE PRIMA SEMIFINALE',
@@ -981,7 +1054,7 @@ export const store = reactive({
                 // squadre che giocano alle 18:00
                 {
                     categoria: '2015',
-                    campo: "CAMPO 1",
+                    campo: "CAMPO 2",
                     orario: "19:20",
                     // girone: 1,
                     nome_squadra_casa: 'VINCENTE PRIMA SEMIFINALE',
