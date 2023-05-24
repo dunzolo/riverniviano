@@ -77,7 +77,11 @@ export default {
                                 <p><strong>{{ item.campo }}</strong></p>
                                 <p><strong>{{ item.orario }}</strong></p>
                             </div>
-                            <div v-else>
+                            <div class="hour" v-if="item.risultato_squadra_casa == item.risultato_squadra_ospite">
+                                <p><strong>{{ item.risultato_squadra_casa }} - {{ item.risultato_squadra_ospite }}</strong></p>
+                                <p><strong>{{ item.vittoria }}</strong></p>
+                            </div>
+                            <div class="hour" v-else>
                                 <p><strong>{{ item.risultato_squadra_casa }} - {{ item.risultato_squadra_ospite }}</strong></p>
                             </div>
                             <div class="squad"><span>{{ item.nome_squadra_ospite }}</span></div>
