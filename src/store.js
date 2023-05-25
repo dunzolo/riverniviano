@@ -997,9 +997,9 @@ export const store = reactive({
                     orario: "19:00",
                     // girone: 1,
                     nome_squadra_casa: 'RIVERNIVIANO',
-                    risultato_squadra_casa: null,
+                    risultato_squadra_casa: 6,
                     nome_squadra_ospite: 'PODENZANO',
-                    risultato_squadra_ospite: null,
+                    risultato_squadra_ospite: 3,
                 },
                 // squadre che giocano alle 18:00
                 {
@@ -1008,9 +1008,9 @@ export const store = reactive({
                     orario: "19:20",
                     // girone: 1,
                     nome_squadra_casa: 'AUDAX LIBERTAS',
-                    risultato_squadra_casa: null,
+                    risultato_squadra_casa: 5,
                     nome_squadra_ospite: 'RIVERNIVIANO VERDE',
-                    risultato_squadra_ospite: null,
+                    risultato_squadra_ospite: 1,
                 }
             ]
         },
@@ -1025,7 +1025,7 @@ export const store = reactive({
                     campo: "CAMPO 1",
                     orario: "18:00",
                     // girone: 1,
-                    nome_squadra_casa: 'PERDENTE PRIMA SEMIFINALE',
+                    nome_squadra_casa: 'PODENZANO',
                     risultato_squadra_casa: null,
                     nome_squadra_ospite: 'AUDAX LIBERTAS',
                     risultato_squadra_ospite: null,
@@ -1036,7 +1036,7 @@ export const store = reactive({
                     campo: "CAMPO 2",
                     orario: "18:20",
                     // girone: 1,
-                    nome_squadra_casa: 'PERDENTE PRIMA SEMIFINALE',
+                    nome_squadra_casa: 'RIVERNIVIANO VERDE',
                     risultato_squadra_casa: null,
                     nome_squadra_ospite: 'RIVERNIVIANO BLU',
                     risultato_squadra_ospite: null,
@@ -1049,7 +1049,7 @@ export const store = reactive({
                     // girone: 1,
                     nome_squadra_casa: 'GOTICO',
                     risultato_squadra_casa: null,
-                    nome_squadra_ospite: 'VINCENTE SECONDA SEMIFINALE',
+                    nome_squadra_ospite: 'RIVERNIVIANO',
                     risultato_squadra_ospite: null,
                 },
                 // squadre che giocano alle 18:00
@@ -1060,7 +1060,7 @@ export const store = reactive({
                     // girone: 1,
                     nome_squadra_casa: 'GOTICO',
                     risultato_squadra_casa: null,
-                    nome_squadra_ospite: 'VINCENTE SECONDA SEMIFINALE',
+                    nome_squadra_ospite: 'AUDAX LIBERTAS',
                     risultato_squadra_ospite: null,
                 }
             ]
