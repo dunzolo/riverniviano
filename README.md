@@ -7,6 +7,22 @@
 </p>
 
 <h3>⚙️ Funzionalità:</h3>
+1. Clona la repository da GitHub 
+2. Inizializza la repository installando i pacchetti e configurandola con le tue impostazioni:
+    
+    - `composer install` 
+    - `npm install` 
+	- `cp .env.example .env` 
+	- `php artisan key:generate`
+     
+3. Collega il tuo database e lancia le [migrations](database/migrations) e i [seeder](database/seeds): 
+	- `php artisan migrate`
+	- `php artisan db:seed` 
+4. Crea il collegamento alla cartella [storage](storage): 
+	- `php artisan storage:link` 
+5. Lancia il sito: 
+	- `npm run watch` 
+	- `php artisan serve`
 
 <h3>🎥 Preview<h3>
 <img src="https://user-images.githubusercontent.com/112269790/226676535-caa93390-d1ae-42ed-a966-2c2cbfbb3037.gif" alt="spotify-layout-preview" width="100%">
