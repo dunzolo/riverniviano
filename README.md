@@ -3,7 +3,7 @@
     Elenco partite suddivise per categoria con rispettive classifiche e risultati
 </p>
 <p align="center">
- <img src="https://user-images.githubusercontent.com/112269790/226673769-dacb8d1a-48bb-49be-986a-10a87908807f.png" alt="spotify-layout-layout" width="80%">
+ <img src="https://github.com/dunzolo/riverniviano/assets/112269790/9ed97e2d-8fba-4464-9a9c-009a15dc0b25.png" alt="riverniviano-layout" width="80%">
 </p>
 
 <h3>⚙️ Funzionalità: responsive layout</h3>
