@@ -8,7 +8,7 @@
 
 <h3>⚙️ Funzionalità:</h3>
 1. Filtro di ricerca per categoria:
-	- 'categoria'
+- categoria
 
 <h3>🎥 Preview<h3>
 <img src="https://user-images.githubusercontent.com/112269790/226676535-caa93390-d1ae-42ed-a966-2c2cbfbb3037.gif" alt="spotify-layout-preview" width="100%">
