@@ -6,7 +6,7 @@
  <img src="https://github.com/dunzolo/riverniviano/assets/112269790/9ed97e2d-8fba-4464-9a9c-009a15dc0b25.png" alt="riverniviano-layout" width="80%">
 </p>
 
-<h3>⚙️ Funzionalità: responsive layout</h3>
+<h3>⚙️ Funzionalità:</h3>
 
 <h3>🎥 Preview<h3>
 <img src="https://user-images.githubusercontent.com/112269790/226676535-caa93390-d1ae-42ed-a966-2c2cbfbb3037.gif" alt="spotify-layout-preview" width="100%">
