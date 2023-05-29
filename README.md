@@ -7,8 +7,10 @@
 </p>
 
 <h3>⚙️ Funzionalità:</h3>
-1. Clona la repository da GitHub 
-2. Inizializza la repository installando i pacchetti e configurandola con le tue impostazioni:
+1. Filtro di ricerca per categoria
+	- `php artisan migrate`
+	- `php artisan db:seed`
+3. Inizializza la repository installando i pacchetti e configurandola con le tue impostazioni:
     
     - `composer install` 
     - `npm install` 
