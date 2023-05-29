@@ -745,9 +745,10 @@ export const store = reactive({
                     orario: "18:00",
                     girone: 1,
                     nome_squadra_casa: 'RIVERNIVIANO',
-                    risultato_squadra_casa: null,
+                    risultato_squadra_casa: 2,
                     nome_squadra_ospite: 'BOBBIESE',
-                    risultato_squadra_ospite: null,
+                    risultato_squadra_ospite: 2,
+                    vittoria: 'VINTO RIVERNIVIANO AI RIGORI'
                 },
                 // squadre che giocano alle 18:20
                 {
@@ -756,9 +757,9 @@ export const store = reactive({
                     orario: "19:00",
                     girone: 2,
                     nome_squadra_casa: 'BORGONOVESE',
-                    risultato_squadra_casa: null,
+                    risultato_squadra_casa: 0,
                     nome_squadra_ospite: 'TRAVESE',
-                    risultato_squadra_ospite: null,
+                    risultato_squadra_ospite: 2,
                 },
                 // squadre che giocano alle 19:00
                 {
@@ -766,10 +767,11 @@ export const store = reactive({
                     campo: "CAMPO 1",
                     orario: "20:00",
                     girone: 1,
-                    nome_squadra_casa: 'PERDENTE PRIMA SEMIFINALE',
-                    risultato_squadra_casa: null,
-                    nome_squadra_ospite: 'PERDENTE SECONDA SEMIFINALE',
-                    risultato_squadra_ospite: null,
+                    nome_squadra_casa: 'BOBBIESE',
+                    risultato_squadra_casa: 2,
+                    nome_squadra_ospite: 'BORGONOVESE',
+                    risultato_squadra_ospite: 2,
+                    vittoria: 'VINTO BOBBIESE AI RIGORI'
                 },
                 // squadre che giocano alle 19:20
                 {
@@ -777,10 +779,10 @@ export const store = reactive({
                     campo: "CAMPO 2",
                     orario: "20:20",
                     girone: 1,
-                    nome_squadra_casa: 'VINCENTE PRIMA SEMIFINALE',
-                    risultato_squadra_casa: null,
-                    nome_squadra_ospite: 'VINCENTE SECONDA SEMIFINALE',
-                    risultato_squadra_ospite: null,
+                    nome_squadra_casa: 'RIVERNIVIANO',
+                    risultato_squadra_casa: 4,
+                    nome_squadra_ospite: 'TRAVESE',
+                    risultato_squadra_ospite: 0,
                 }
             ]
         },
