@@ -8,7 +8,15 @@
 
 <h3>⚙️ Funzionalità:</h3>
 <ol>
-  <li>Filtro di ricerca per categoria</li>
+    <li>
+        <details open>
+            <summary>Git gist highlights</summary>
+            <ul>
+                <li>Using badges</li>
+                <li>Nested lists</li>
+            </ul>
+        </details>
+    </li>
 </ol>
 
 <h3>🎥 Preview<h3>
