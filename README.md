@@ -7,17 +7,32 @@
 </p>
 
 <h3>⚙️ Funzionalità:</h3>
-<ol>
-    <li>
+
         <details open>
-            <summary>Git gist highlights</summary>
+            <summary>Struttura Web App</summary>
+            <ul>
+                <li>Home page </li>
+                <li>Nested lists</li>
+            </ul>
+        </details>
+   
+        <details open>
+            <summary>Hamburger menù</summary>
             <ul>
                 <li>Using badges</li>
                 <li>Nested lists</li>
             </ul>
         </details>
-    </li>
-</ol>
+
+        <details open>
+            <summary>Per </summary>
+            <ul>
+                <li>Using badges</li>
+                <li>Nested lists</li>
+            </ul>
+        </details>
+
+
 
 <h3>🎥 Preview<h3>
 <img src="https://user-images.githubusercontent.com/112269790/226676535-caa93390-d1ae-42ed-a966-2c2cbfbb3037.gif" alt="spotify-layout-preview" width="100%">
