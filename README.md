@@ -34,7 +34,22 @@
 </div>
 
 <div>
-    <h3>💻 Installazione<h3>
+ <h3>💻 Installazione</h3>
+ <ol>
+ <li>Clona la repository da GitHub</li>
+ <li>
+   Inizializza la repository installando i pacchetti e configurandola con le tue impostazioni:
+    
+    npm install
+    
+ </li>
+ <li>
+  Lancia il sito:
+    
+    npm run dev
+    
+  </li>
+ </ol>
 </div>
 
 <div align="left">
@@ -50,10 +65,6 @@
  <p align="center">
   <img src="https://img.shields.io/badge/versione-2023--05--29-blue" alt="versione"/>
  </p>
-
-# How to run
-## Local work
-- npm run dev
 
 <!--## Build work
 - npm run build
