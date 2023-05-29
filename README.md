@@ -8,7 +8,7 @@
 
 <h3>⚙️ Funzionalità:</h3>
 <ol>
-  <li>`Filtro di ricerca per categoria`</li>
+  <li>Filtro di ricerca per categoria</li>
 </ol>
 
 <h3>🎥 Preview<h3>
