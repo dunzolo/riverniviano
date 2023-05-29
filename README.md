@@ -8,8 +8,10 @@
 
 <h3>⚙️ Funzionalità:</h3>
 1. Filtro di ricerca per categoria
+
 	- `php artisan migrate`
 	- `php artisan db:seed`
+
 3. Inizializza la repository installando i pacchetti e configurandola con le tue impostazioni:
     
     - `composer install` 
