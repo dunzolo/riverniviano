@@ -32,7 +32,11 @@
 <div>
     <h3>🎥 Preview<h3>
 </div>
-    
+
+<div>
+    <h3>💻 Installazione<h3>
+</div>
+
 <div align="left">
 <h3>⛏️ Realizzato con</h3>
     
