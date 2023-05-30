@@ -6,8 +6,7 @@
  <img src="https://user-images.githubusercontent.com/112269790/241752569-9ed97e2d-8fba-4464-9a9c-009a15dc0b25.png" alt="riverniviano-layout" width="80%">
 </p>
 
-<div>
-    <h3>⚙️ Funzionalità:</h3>
+<h3>⚙️ Funzionalità:</h3>
 
 <details close>
     <summary><strong>Filtro di ricerca</strong></summary>
@@ -27,33 +26,29 @@
         La Web App è completamente responsive e come si può notare dalle anteprima si può utilizzare su desktop, tablet e mobile
     </p></li></ul>
 </details>
-</div>
 
-<div>
-    <h3>🎥 Preview<h3>
-</div>
+<h3>🎥 Preview</h3>
 
-<div>
- <h3>💻 Installazione</h3>
- <ol>
- <li>Clona la repository da GitHub</li>
- <li>
-   Inizializza la repository installando i pacchetti e configurandola con le tue impostazioni:
-    
-    npm install
-    
- </li>
- <li>
-  Lancia il sito:
-    
-    npm run dev
-    
-  </li>
- </ol>
-</div>
+<h3>💻 Installazione</h3>
+<ol>
+<li>Clona la repository da GitHub</li>
+<li>
+Inizializza la repository installando i pacchetti e configurandola con le tue impostazioni:
 
-<div align="left">
+npm install
+
+</li>
+<li>
+Lancia il sito:
+
+npm run dev
+
+</li>
+</ol>
+
+
 <h3>⛏️ Realizzato con</h3>
+<div align="left">  
     
 |Struttura|Stile|Logica|Framework|
 |----|----|----|----|
