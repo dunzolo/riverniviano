@@ -3,7 +3,7 @@
     Elenco partite suddivise per categoria con rispettive classifiche e risultati
 </p>
 <p align="center">
- <img src="https://github.com/dunzolo/riverniviano/assets/112269790/9ed97e2d-8fba-4464-9a9c-009a15dc0b25.png" alt="riverniviano-layout" width="80%">
+ <img src="https://user-images.githubusercontent.com/112269790/241752569-9ed97e2d-8fba-4464-9a9c-009a15dc0b25.png" alt="riverniviano-layout" width="80%">
 </p>
 
 <div>
