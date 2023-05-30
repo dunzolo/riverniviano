@@ -27,7 +27,7 @@
     </p></li></ul>
 </details>
 
-<h3>🎥 Preview</h3>
+<h3>🎥 Anteprima</h3>
 
 <h3>💻 Installazione</h3>
 <ol>
