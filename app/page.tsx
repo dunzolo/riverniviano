@@ -1,27 +1,25 @@
 "use client";
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Skeleton } from "@/components/ui/skeleton";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import dayjs from "@/lib/dayjs-config";
 import Image from "next/image";
 import Link from "next/link";
-import { useReactQuery } from "./hooks/use-react-query";
 import { Tournament } from "./types/database";
 
 export default function Page() {
   const currentYear = new Date().getFullYear();
 
-  const { data, isLoading, error } = useReactQuery<Tournament[]>(
-    "fe-tournaments",
-    {
-      filters: { year: 2025 },
-    }
-  );
+  // const { data, isLoading, error } = useReactQuery<Tournament[]>(
+  //   "fe-tournaments",
+  //   {
+  //     filters: { year: 2025 },
+  //   }
+  // );
 
-  if (error) {
-    return <p className="text-red-500">Errore nel caricamento dei tornei.</p>;
-  }
+  // if (error) {
+  //   return <p className="text-red-500">Errore nel caricamento dei tornei.</p>;
+  // }
 
   return (
     <div className="container flex-1 space-y-4 p-4 md:p-8">
@@ -51,7 +49,7 @@ export default function Page() {
           </TabsTrigger>
         </TabsList>
 
-        <TabsContent value="in-corso">
+        {/* <TabsContent value="in-corso">
           <div className="mb-2 text-lg font-semibold text-cyan-800">
             {currentYear}
           </div>
@@ -68,7 +66,7 @@ export default function Page() {
             data?.data?.map((tournament: Tournament) => (
               <TournamentCard key={tournament.id} tournament={tournament} />
             ))}
-        </TabsContent>
+        </TabsContent> */}
       </Tabs>
     </div>
   );
