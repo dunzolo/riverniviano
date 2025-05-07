@@ -121,7 +121,6 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground box-border;
-    background-color: #a4b0b849;
+    @apply bg-background text-foreground;
   }
 }
