@@ -17,20 +17,6 @@ export default function TournamentDetail({
       </h1>
       <h3 className="text-center !mt-0">{initialTournament.description}</h3>
 
-      <div className="mt-4">
-        <div className="flex justify-center mt-2">
-          <Link href={`/copa-crozada-mappa.pdf`} passHref legacyBehavior>
-            <a
-              className="text-blue-500 hover:underline"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Vai alla mappa del torneo
-            </a>
-          </Link>
-        </div>
-      </div>
-
       {initialCategories?.map((category: Category) => {
         return (
           <div className="mt-4" key={category.id}>
