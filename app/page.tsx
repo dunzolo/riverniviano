@@ -81,32 +81,40 @@ interface TournamentCardProps {
 const TournamentCard = ({ tournament }: TournamentCardProps) => {
   return (
     <Link href={tournament.slug}>
-      <Card className="mb-3 px-3 flex flex-row items-center justify-between">
-        <div className="w-2/3">
-          <CardHeader className="flex flex-row items-center justify-between space-y-0 px-0 pb-2">
-            <CardTitle className="text-xl font-bold">
-              {tournament.name}
-            </CardTitle>
-          </CardHeader>
-          <CardContent className="flex justify-between px-0">
-            <div className="text-sm font-medium">
-              <div>
-                {`🗓 Dal ${dayjs(tournament.start_date).format(
-                  "D MMMM"
-                )} al ${dayjs(tournament.end_date).format("D MMMM YYYY")}`}
+      <Card
+        className="mb-3 px-3 text-white gap-0 relative"
+        style={{
+          backgroundImage: "url(" + tournament.background_image + ")",
+          backgroundSize: "cover",
+          backgroundPosition: "right",
+          maxHeight: "160px",
+        }}
+      >
+        <CardHeader className="absolute w-full flex flex-row items-center justify-between space-y-0 px-0">
+          <CardTitle className="text-xl font-bold">{tournament.name}</CardTitle>
+        </CardHeader>
+        <div className="flex flex-row items-center justify-between pt-8">
+          <div className="w-2/3">
+            <CardContent className="flex justify-between px-0">
+              <div className="text-sm font-medium">
+                <div>
+                  {`🗓 Dal ${dayjs(tournament.start_date).format(
+                    "D MMMM"
+                  )} al ${dayjs(tournament.end_date).format("D MMMM YYYY")}`}
+                </div>
+                <div>{`⚽️ ${tournament.categories_count} categorie - ${tournament.teams_count} squadre`}</div>
               </div>
-              <div>{`⚽️ ${tournament.categories_count} categorie - ${tournament.teams_count} squadre`}</div>
-            </div>
-          </CardContent>
-        </div>
-        <div className="w-24 h-24">
-          <Image
-            src={tournament.logo ?? "/default-logo.png"}
-            alt="logo"
-            width={512}
-            height={512}
-            className="h-full"
-          />
+            </CardContent>
+          </div>
+          <div className="w-24 h-24">
+            <Image
+              src={tournament.logo ?? "/default-logo.png"}
+              alt="logo"
+              width={512}
+              height={512}
+              className="h-full"
+            />
+          </div>
         </div>
       </Card>
     </Link>

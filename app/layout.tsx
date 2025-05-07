@@ -15,9 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Parma Academy",
+  title: "RiverNiviano",
   description:
-    "Parma Academy is a platform for learning and sharing knowledge about the Parma ecosystem.",
+    "Riverniviano è una piattaforma per la gestione del torneo di calcio.",
 };
 
 export default function RootLayout({
