@@ -13,7 +13,7 @@ import {
 } from "@/components/ui/select";
 import { Separator } from "@/components/ui/separator";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import dayjs from "dayjs";
+import dayjs from "@/lib/dayjs-config";
 import { useState } from "react";
 import { GroupTable } from "./group-table";
 import RowMatch from "./row-match";
@@ -53,17 +53,6 @@ export default function TournamentTabs({
     activeTab === "qualification"
   );
 
-  const { data: groupMainRoundData } = useReactQuery(
-    `fe-tournaments/${initialTournament}/groups`,
-    {
-      filters: {
-        category_id: initialCategory,
-        round_type: "main-round",
-      },
-    },
-    activeTab === "main-round"
-  );
-
   const { data: groupFinalRoundData } = useReactQuery(
     `fe-tournaments/${initialTournament}/groups`,
     {
@@ -99,7 +88,6 @@ export default function TournamentTabs({
         <TabsList className="w-full">
           <TabsTrigger value="matches">Partite</TabsTrigger>
           <TabsTrigger value="qualification">Gironi</TabsTrigger>
-          <TabsTrigger value="main-round">Seconda fase</TabsTrigger>
           <TabsTrigger value="final">Fase finale</TabsTrigger>
           <TabsTrigger value="info">Info</TabsTrigger>
         </TabsList>
@@ -153,30 +141,6 @@ export default function TournamentTabs({
 
       <TabsContent value="qualification" className="space-y-4">
         {groupQualificationData?.data.map((item: Group) => {
-          return (
-            <Card key={item.id} className="p-0 gap-0">
-              <CardHeader
-                className={
-                  "flex flex-row items-center justify-center space-y-0 p-2 rounded-t-xl opacity-90 bg-[#2E3C81] text-white"
-                }
-              >
-                <CardTitle className="text-sm font-medium">
-                  {item.name}
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="p-2">
-                <GroupTable data={item.group_teams} />
-              </CardContent>
-              <div className="flex-1 text-sm text-muted-foreground text-center space-x-2 py-2">
-                Classifica aggiornata
-              </div>
-            </Card>
-          );
-        })}
-      </TabsContent>
-
-      <TabsContent value="main-round" className="space-y-4">
-        {groupMainRoundData?.data.map((item: Group) => {
           return (
             <Card key={item.id} className="p-0 gap-0">
               <CardHeader

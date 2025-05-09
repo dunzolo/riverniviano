@@ -3,7 +3,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import dayjs from "dayjs";
+import dayjs from "@/lib/dayjs-config";
 import Image from "next/image";
 import Link from "next/link";
 import { useReactQuery } from "./hooks/use-react-query";
@@ -11,6 +11,8 @@ import { Tournament } from "./types/database";
 
 export default function Page() {
   const currentYear = new Date().getFullYear();
+
+  console.debug(dayjs().locale());
 
   const { data, isLoading, error } = useReactQuery<Tournament[]>(
     "fe-tournaments",
