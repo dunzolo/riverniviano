@@ -201,58 +201,63 @@ export default function TournamentTabs({
       </TabsContent>
 
       <TabsContent value="mini-games" className="space-y-4">
-        {miniGamesData?.data.map((item: any) => {
-          const isShotOut = item.match_type === "shot-out";
+        {/* {miniGamesData?.data.map((item: Match[]) => { */}
+        {miniGamesData?.data.map(
+          (item: { match_type: string; matches: Match[] }) => {
+            const isShotOut = item.match_type === "shot-out";
 
-          return (
-            <div key={item.match_type}>
-              <div className="text-center mb-4">
-                {isShotOut ? (
-                  <>
-                    <h3>GIOCO 1</h3>
-                    <p>Shoot-out di squadra</p>
-                    <p>
-                      Ogni giocatore, partendo da 15m, ha 7 secondi per segnare
-                      al portiere avversario.
-                    </p>
-                  </>
-                ) : (
-                  <>
-                    <div className="flex justify-center">
-                      <Image
-                        src="/images/tiro_al_bersaglio.png"
-                        alt="tiro_al_bersaglio"
-                        width={512}
-                        height={512}
-                        className="h-52 w-52 scale-150"
-                      />
-                    </div>
-                    <h3 className="text-xl font-bold">GIOCO 2</h3>
-                    <p className="font-semibold">
-                      Tiro al bersaglio individuale
-                    </p>
-                    <p>
-                      Ogni giocatore ha 3 tiri da 7 metri (5m per scuola calcio)
-                      per fare il miglior punteggio.
-                    </p>
-                  </>
-                )}
-              </div>
+            return (
+              <div key={item.match_type}>
+                <div className="text-center mb-4">
+                  {isShotOut ? (
+                    <>
+                      <h3>GIOCO 1</h3>
+                      <p>Shoot-out di squadra</p>
+                      <p>
+                        Ogni giocatore, partendo da 15m, ha 7 secondi per
+                        segnare al portiere avversario.
+                      </p>
+                    </>
+                  ) : (
+                    <>
+                      <div className="flex justify-center">
+                        <Image
+                          src="/images/tiro_al_bersaglio.png"
+                          alt="tiro_al_bersaglio"
+                          width={512}
+                          height={512}
+                          className="h-52 w-52 scale-150"
+                        />
+                      </div>
+                      <h3 className="text-xl font-bold">GIOCO 2</h3>
+                      <p className="font-semibold">
+                        Tiro al bersaglio individuale
+                      </p>
+                      <p>
+                        Ogni giocatore ha 3 tiri da 7 metri (5m per scuola
+                        calcio) per fare il miglior punteggio.
+                      </p>
+                    </>
+                  )}
+                </div>
 
-              <div
-                className={clsx("grid gap-2 place-items-center md:grid-cols-2")}
-              >
-                {item.matches.map((match: any) => {
-                  if (isShotOut) {
-                    return <RowMatch key={match.id} matchGame={match} />;
-                  } else {
-                    return <RowMatch key={match.id} matchGame={match} />;
-                  }
-                })}
+                <div
+                  className={clsx(
+                    "grid gap-2 place-items-center md:grid-cols-2"
+                  )}
+                >
+                  {item.matches.map((match: Match) => {
+                    if (isShotOut) {
+                      return <RowMatch key={match.id} matchGame={match} />;
+                    } else {
+                      return <RowMatch key={match.id} matchGame={match} />;
+                    }
+                  })}
+                </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          }
+        )}
       </TabsContent>
 
       <TabsContent value="info" className="space-y-4">
