@@ -92,17 +92,30 @@ export default function TournamentTabs({
     });
   };
 
+  const triggerBaseClasses =
+    "pb-2 border-b-2 border-transparent data-[state=active]:border-cyan-600 data-[state=active]:text-cyan-800";
+
   return (
     <Tabs defaultValue="matches" onValueChange={setActiveTab}>
       <div className="bg-white sticky top-[56px] py-2 z-[3]">
         <TabsList className="w-full">
-          <TabsTrigger value="matches">Partite</TabsTrigger>
-          <TabsTrigger value="qualification">Gironi</TabsTrigger>
-          <TabsTrigger value="final">Fase finale</TabsTrigger>
+          <TabsTrigger value="matches" className={triggerBaseClasses}>
+            Partite
+          </TabsTrigger>
+          <TabsTrigger value="qualification" className={triggerBaseClasses}>
+            Gironi
+          </TabsTrigger>
+          <TabsTrigger value="final" className={triggerBaseClasses}>
+            Fase finale
+          </TabsTrigger>
           {initialCategory == "5" && (
-            <TabsTrigger value="mini-games">Sfide</TabsTrigger>
+            <TabsTrigger value="mini-games" className={triggerBaseClasses}>
+              Sfide
+            </TabsTrigger>
           )}
-          <TabsTrigger value="info">Info</TabsTrigger>
+          <TabsTrigger value="info" className={triggerBaseClasses}>
+            Info
+          </TabsTrigger>
         </TabsList>
       </div>
 
