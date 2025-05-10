@@ -14,6 +14,8 @@ import {
 import { Separator } from "@/components/ui/separator";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import dayjs from "@/lib/dayjs-config";
+import clsx from "clsx";
+import Image from "next/image";
 import { useState } from "react";
 import { GroupTable } from "./group-table";
 import RowMatch from "./row-match";
@@ -64,6 +66,14 @@ export default function TournamentTabs({
     activeTab === "final"
   );
 
+  const { data: miniGamesData } = useReactQuery(
+    `fe-tournaments/${initialTournament}/mini-games`,
+    {
+      filters: {},
+    },
+    activeTab === "mini-games"
+  );
+
   const { data: rules } = useReactQuery(
     `fe-categories/${initialCategory}/rules`,
     {
@@ -89,6 +99,9 @@ export default function TournamentTabs({
           <TabsTrigger value="matches">Partite</TabsTrigger>
           <TabsTrigger value="qualification">Gironi</TabsTrigger>
           <TabsTrigger value="final">Fase finale</TabsTrigger>
+          {initialCategory == "5" && (
+            <TabsTrigger value="mini-games">Sfide</TabsTrigger>
+          )}
           <TabsTrigger value="info">Info</TabsTrigger>
         </TabsList>
       </div>
@@ -183,6 +196,61 @@ export default function TournamentTabs({
                 Classifica aggiornata
               </div>
             </Card>
+          );
+        })}
+      </TabsContent>
+
+      <TabsContent value="mini-games" className="space-y-4">
+        {miniGamesData?.data.map((item: any) => {
+          const isShotOut = item.match_type === "shot-out";
+
+          return (
+            <div key={item.match_type}>
+              <div className="text-center mb-4">
+                {isShotOut ? (
+                  <>
+                    <h3>GIOCO 1</h3>
+                    <p>Shoot-out di squadra</p>
+                    <p>
+                      Ogni giocatore, partendo da 15m, ha 7 secondi per segnare
+                      al portiere avversario.
+                    </p>
+                  </>
+                ) : (
+                  <>
+                    <div className="flex justify-center">
+                      <Image
+                        src="/images/tiro_al_bersaglio.png"
+                        alt="tiro_al_bersaglio"
+                        width={512}
+                        height={512}
+                        className="h-52 w-52 scale-150"
+                      />
+                    </div>
+                    <h3 className="text-xl font-bold">GIOCO 2</h3>
+                    <p className="font-semibold">
+                      Tiro al bersaglio individuale
+                    </p>
+                    <p>
+                      Ogni giocatore ha 3 tiri da 7 metri (5m per scuola calcio)
+                      per fare il miglior punteggio.
+                    </p>
+                  </>
+                )}
+              </div>
+
+              <div
+                className={clsx("grid gap-2 place-items-center md:grid-cols-2")}
+              >
+                {item.matches.map((match: any) => {
+                  if (isShotOut) {
+                    return <RowMatch key={match.id} matchGame={match} />;
+                  } else {
+                    return <RowMatch key={match.id} matchGame={match} />;
+                  }
+                })}
+              </div>
+            </div>
           );
         })}
       </TabsContent>
