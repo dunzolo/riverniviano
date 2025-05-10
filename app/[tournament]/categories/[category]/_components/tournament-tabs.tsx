@@ -224,8 +224,8 @@ export default function TournamentTabs({
                 <div className="text-center mb-4">
                   {isShotOut ? (
                     <>
-                      <h3>GIOCO 1</h3>
-                      <p>Shoot-out di squadra</p>
+                      <h3 className="text-xl font-bold">GIOCO 1</h3>
+                      <p className="font-semibold">Shoot-out di squadra</p>
                       <p>
                         Ogni giocatore, partendo da 15m, ha 7 secondi per
                         segnare al portiere avversario.
