@@ -69,7 +69,9 @@ export default function TournamentTabs({
   const { data: miniGamesData } = useReactQuery(
     `fe-tournaments/${initialTournament}/mini-games`,
     {
-      filters: {},
+      filters: {
+        category_id: initialCategory,
+      },
     },
     activeTab === "mini-games"
   );
