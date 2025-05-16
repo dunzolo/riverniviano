@@ -112,7 +112,9 @@ export default function TournamentTabs({
               Fase finale
             </TabsTrigger>
           )}
-          {(initialCategory == "5" || initialCategory == "7") && (
+          {(initialCategory == "5" ||
+            initialCategory == "6" ||
+            initialCategory == "7") && (
             <TabsTrigger value="mini-games" className={triggerBaseClasses}>
               Sfide
             </TabsTrigger>
